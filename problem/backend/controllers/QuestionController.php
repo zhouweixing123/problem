@@ -21,14 +21,6 @@ class QuestionController extends AdminController
         return [
             'upload'=>[
                 'class' => 'common\widgets\ueditor\UeditorAction',
-<<<<<<< HEAD
-                'config'=>[
-                    //上传图片配置
-                    'imageUrlPrefix' => "http://www.problem.com", /* 图片访问路径前缀 */
-                    'imagePathFormat' => "/upload/{yyyy}{mm}{dd}/{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
-                ]
-            ]
-=======
                 'config' => [
                     'imageUrlPrefix' => 'http://problem.zhouweixing.top',//文件访问的路径前缀
                     'imagePathFormat' => '/../upload/{yyyy}{mm}{dd}/{time}{rand:6}',//文件的上传路径
@@ -49,7 +41,6 @@ class QuestionController extends AdminController
                    # 'saveDatabase' => false,  // 保存上传信息到数据库
                # ]
             #],
->>>>>>> 2844bd082f1a06c9a9f2ba2683bae1aaeff099da
         ];
     }
 
