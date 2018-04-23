@@ -20,7 +20,7 @@ class NamingController extends AdminController
         }
         $data = (new Query()) -> from("user") -> select(['username','id']) -> where(['is_show' => 1]) -> all();
 
-        if (empty($data)){
+        if (empty($data) || count($data) == 1){
             \Yii::$app -> db -> createCommand() -> update('user',['is_show' => 1]) -> execute();
         }
         $data = (new Query()) -> from("user") -> select(['username','id']) -> where(['is_show' => 1]) -> all();
