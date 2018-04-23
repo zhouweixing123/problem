@@ -19,17 +19,6 @@ class QuestionController extends AdminController
     public function actions()
     {
         return [
-            'upload'=>[
-                'class' => 'common\widgets\ueditor\UeditorAction',
-                'config' => [
-                    'imageUrlPrefix' => 'http://problem.zhouweixing.top',//文件访问的路径前缀
-                    'imagePathFormat' => '/../upload/{yyyy}{mm}{dd}/{time}{rand:6}',//文件的上传路径
-		    "imagePath"=> "/ueditor/php/",
-   	            "imageMaxSize"=> 2048,
-                    'imageRoot' => \Yii::getAlias("@webroot"),
-                    'fileFieldName' => 'upBase64',
-                ],
-	],
             #'WebUpload' => [
              #   'class' => 'common\widgets\webuploader\UploaderAction',
               #  'config' => [
