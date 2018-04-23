@@ -19,28 +19,14 @@ class QuestionController extends AdminController
     public function actions()
     {
         return [
-            'upload' => [
+            'upload'=>[
                 'class' => 'common\widgets\ueditor\UeditorAction',
-                'config' => [
-                    'imageUrlPrefix' => 'http://problem.zhouweixing.top',//文件访问的路径前缀
-                    'imagePathFormat' => '/upload/{yyyy}{mm}{dd}/{time}{rand:6}',//文件的上传路径
-                    'imageRoot' => \Yii::getAlias("@webroot"),
-                    'fileFieldName' => 'upBase64',
-                ],
-            ],
-            'WebUpload' => [
-                'class' => 'common\widgets\webuploader\UploaderAction',
-                'config' => [
-                    'maxSize' => 5*1024*1024,  // 上传大小限制, 单位B, 默认5MB, 注意修改服务器的大小限制
-                    'allowFiles' => ['.png', '.jpg', '.jpeg', '.gif', '.bmp'],  // 上传图片格式显示
-                    'thumbStatus' => false,  // 是否生成缩略图
-                    'thumbWidth' => 300,  // 缩略图宽度
-                    'thumbHeight' => 200,  // 缩略图高度
-                    'thumbCut' => 1,  // 生成缩略图的方式, 0:留白, 1:裁剪
-                    'pathFormat' => '../../frontend/web/upload/{yyyy}{mm}{dd}/{time}{rand:6}',  // 上传保存路径, 可以自定义保存路径和文件名格式
-                    'saveDatabase' => false,  // 保存上传信息到数据库
+                'config'=>[
+                    //上传图片配置
+                    'imageUrlPrefix' => "http://www.problem.com", /* 图片访问路径前缀 */
+                    'imagePathFormat' => "/upload/{yyyy}{mm}{dd}/{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
                 ]
-            ],
+            ]
         ];
     }
 

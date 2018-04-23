@@ -39,16 +39,14 @@ class Uploader
         "ERROR_UNKNOWN" => "未知错误",
         "ERROR_DEAD_LINK" => "链接不可用",
         "ERROR_HTTP_LINK" => "链接不是http链接",
-        "ERROR_HTTP_CONTENTTYPE" => "链接contentType不正确",
-        "INVALID_URL" => "非法 URL",
-        "INVALID_IP" => "非法 IP"
+        "ERROR_HTTP_CONTENTTYPE" => "链接contentType不正确"
     );
 
     /**
      * 构造函数
      * @param string $fileField 表单名称
      * @param array $config 配置项
-     * @param bool $base64 是否解析base64编码，可省略。若开启，则$fileField代表的是base64编码的字符串表单名
+	 * @param string $type	处理文件上传的方式
      */
     public function __construct($fileField, $config, $type = "upload")
     {
@@ -63,7 +61,7 @@ class Uploader
             $this->upFile();
         }
 
-        $this->stateMap['ERROR_TYPE_NOT_ALLOWED'] = iconv('unicode', 'utf-8', $this->stateMap['ERROR_TYPE_NOT_ALLOWED']);
+        $this->stateMap['ERROR_TYPE_NOT_ALLOWED'] = mb_convert_encoding($this->stateMap['ERROR_TYPE_NOT_ALLOWED'], 'utf-8', 'auto');
     }
 
     /**
@@ -174,33 +172,17 @@ class Uploader
     {
         $imgUrl = htmlspecialchars($this->fileField);
         $imgUrl = str_replace("&amp;", "&", $imgUrl);
+	    
+        //获取带有GET参数的真实图片url路径
+        $pathRes     = parse_url($imgUrl);
+        $queryString = isset($pathRes['query']) ? $pathRes['query'] : '';
+        $imgUrl      = str_replace('?' . $queryString, '', $imgUrl);
 
         //http开头验证
         if (strpos($imgUrl, "http") !== 0) {
             $this->stateInfo = $this->getStateInfo("ERROR_HTTP_LINK");
             return;
         }
-
-        preg_match('/(^https*:\/\/[^:\/]+)/', $imgUrl, $matches);
-        $host_with_protocol = count($matches) > 1 ? $matches[1] : '';
-
-        // 判断是否是合法 url
-        if (!filter_var($host_with_protocol, FILTER_VALIDATE_URL)) {
-            $this->stateInfo = $this->getStateInfo("INVALID_URL");
-            return;
-        }
-
-        preg_match('/^https*:\/\/(.+)/', $host_with_protocol, $matches);
-        $host_without_protocol = count($matches) > 1 ? $matches[1] : '';
-
-        // 此时提取出来的可能是 ip 也有可能是域名，先获取 ip
-        $ip = gethostbyname($host_without_protocol);
-        // 判断是否是私有 ip
-        if(!filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE)) {
-            $this->stateInfo = $this->getStateInfo("INVALID_IP");
-            return;
-        }
-
         //获取请求头并检测死链
         $heads = get_headers($imgUrl, 1);
         if (!(stristr($heads[0], "200") && stristr($heads[0], "OK"))) {
@@ -221,7 +203,7 @@ class Uploader
                 'follow_location' => false // don't follow redirects
             ))
         );
-        readfile($imgUrl, false, $context);
+        readfile($imgUrl . '?' . $queryString, false, $context);
         $img = ob_get_contents();
         ob_end_clean();
         preg_match("/[\/]([^\/]*)[\.]?[^\.\/]*$/", $imgUrl, $m);
@@ -237,6 +219,12 @@ class Uploader
         //检查文件大小是否超出限制
         if (!$this->checkSize()) {
             $this->stateInfo = $this->getStateInfo("ERROR_SIZE_EXCEED");
+            return;
+        }
+
+        //检查文件内容是否真的是图片
+        if (substr(mime_content_type($this->filePath), 0, 5) != 'image') {
+            $this->stateInfo = $this->getStateInfo("ERROR_TYPE_NOT_ALLOWED");
             return;
         }
 
@@ -296,7 +284,7 @@ class Uploader
         $format = str_replace("{ss}", $d[6], $format);
         $format = str_replace("{time}", $t, $format);
 
-        //过滤文件名的非法自负,并替换文件名
+        //过滤文件名的非法字符,并替换文件名
         $oriName = substr($this->oriName, 0, strrpos($this->oriName, '.'));
         $oriName = preg_replace("/[\|\?\"\<\>\/\*\\\\]+/", '', $oriName);
         $format = str_replace("{filename}", $oriName, $format);
@@ -307,7 +295,11 @@ class Uploader
             $format = preg_replace("/\{rand\:[\d]*\}/i", substr($randNum, 0, $matches[1]), $format);
         }
 
-        $ext = $this->getFileExt();
+        if($this->fileType){
+            $ext = $this->fileType;
+        } else {
+            $ext = $this->getFileExt();
+        }
         return $format . $ext;
     }
 
