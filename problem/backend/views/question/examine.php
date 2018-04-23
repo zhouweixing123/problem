@@ -42,12 +42,12 @@ AppAsset::addJs($this,'js/question.js');
                         <td>
 
                             <?php if ($v['status'] == 0):?>
-                                <i class="fa fa-check-square-o mouse color_red status" data-id="<?=$v['question_id']?>" data-url="http://www.problem.com/question/status">未审核</i>
+                                <i class="fa fa-check-square-o mouse color_red status" data-id="<?=$v['question_id']?>" data-url="<?=\Yii::$app -> urlManager -> createUrl(['question/status'])?>">未审核</i>
                             <?php else:?>
                                 <i class="fa fa-check-square-o mouse">已审核</i>
                             <?php endif;?>
                         </td>
-                        <td><i class="fa fa-edit"></i><a href="<?=Yii::$app -> urlManager -> createUrl(['question/update','id' => $v['question_id']])?>">修改</a>/<i class="fa fa-trash-o"></i><span class="del mouse" data-id="<?=$v['question_id']?>" data-url="http://www.problem.com/question/del" data-success="http://www.problem.com/question/index">删除</span></td>
+                        <td><i class="fa fa-edit"></i><a href="<?=Yii::$app -> urlManager -> createUrl(['question/update','id' => $v['question_id']])?>">修改</a>/<i class="fa fa-trash-o"></i><span class="del mouse" data-id="<?=$v['question_id']?>" data-url="<?=\Yii::$app -> urlManager -> createUrl(['/question/del'])?>" data-success="<?=\Yii::$app -> urlManager -> createUrl(['question/index'])?>">删除</span></td>
                     </tr>
                 <?php endforeach;?>
                 </tbody>
