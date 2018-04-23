@@ -30,7 +30,7 @@ class Ueditor extends InputWidget
         
         $this->_init = [
             'serverUrl' => Url::to(['upload']),//定义文件上传的控制器、方法
-            'lang' => (strtolower(\Yii::$app->language) == 'zh-cn') ? 'en' : 'en-us',
+            'lang' => (strtolower(\Yii::$app->language) == 'en-us') ? 'en' : 'zh-cn',
         ];
         $this->options = ArrayHelper::merge($this->_init, $this->options);
         //parent::init();
