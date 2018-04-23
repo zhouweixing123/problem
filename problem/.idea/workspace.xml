@@ -20,8 +20,8 @@
       <file leaf-file-name="QuestionController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/controllers/QuestionController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="25" column="55" lean-forward="true" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+            <state relative-caret-position="211">
+              <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -41,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/backend/views/question/add.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="203">
-              <caret line="21" column="78" lean-forward="true" selection-start-line="21" selection-start-column="78" selection-end-line="22" selection-end-column="135" />
+              <caret line="21" column="78" lean-forward="false" selection-start-line="21" selection-start-column="78" selection-end-line="22" selection-end-column="135" />
               <folding />
             </state>
           </provider>
@@ -118,9 +118,9 @@
         <option value="G:/demo_yii/backend/views/site/index.php" />
         <option value="G:/demo_yii/backend/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/common/widgets/ueditor/Ueditor.php" />
-        <option value="$PROJECT_DIR$/backend/controllers/QuestionController.php" />
         <option value="$PROJECT_DIR$/backend/views/question/add.php" />
         <option value="$PROJECT_DIR$/backend/components/AdminController.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/QuestionController.php" />
       </list>
     </option>
   </component>
@@ -323,12 +323,12 @@
       <workItem from="1524463214627" duration="722000" />
       <workItem from="1524465254281" duration="392000" />
       <workItem from="1524468121528" duration="12948000" />
-      <workItem from="1524495152218" duration="1181000" />
+      <workItem from="1524495152218" duration="1514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41114000" />
+    <option name="totallyTimeSpent" value="41447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -661,7 +661,7 @@
     <entry file="file://$PROJECT_DIR$/backend/views/question/add.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
-          <caret line="21" column="78" lean-forward="true" selection-start-line="21" selection-start-column="78" selection-end-line="22" selection-end-column="135" />
+          <caret line="21" column="78" lean-forward="false" selection-start-line="21" selection-start-column="78" selection-end-line="22" selection-end-column="135" />
           <folding />
         </state>
       </provider>
@@ -676,8 +676,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/controllers/QuestionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="55" lean-forward="true" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+        <state relative-caret-position="211">
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding />
         </state>
       </provider>
