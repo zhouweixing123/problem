@@ -54,7 +54,7 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     public function rules()
     {
         return [
-            [['role', 'status','is_show'], 'integer'],
+            [['role', 'status','is_show','is_naming'], 'integer'],
             [['created_at', 'updated_at'], 'required'],
             [['created_at', 'updated_at'], 'safe'],
             [['username'], 'string', 'max' => 25],
@@ -79,6 +79,7 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
             'role' => 'Role',
             'status' => 'Status',
             'is_show' => 'Is Show',
+            'is_naming' => 'Is Naming',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
         ];

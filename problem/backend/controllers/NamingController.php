@@ -18,15 +18,14 @@ class NamingController extends AdminController
         if (\Yii::$app -> getRequest() -> getIsGet()){
             return $this -> render('index');
         }
-        $data = (new Query()) -> from("user") -> select(['username','id']) -> where(['is_show' => 1]) -> all();
-
+        $data = (new Query()) -> from("user") -> select(['username','id']) -> where(['is_show' => 1,'is_naming' => 1]) -> all();
         if (empty($data) || count($data) == 1){
-            \Yii::$app -> db -> createCommand() -> update('user',['is_show' => 1]) -> execute();
+            \Yii::$app -> db -> createCommand() -> update('user',['is_show' => 1]) -> where(['is_naming' => 1]) -> execute();
         }
-        $data = (new Query()) -> from("user") -> select(['username','id']) -> where(['is_show' => 1]) -> all();
+        $data = (new Query()) -> from("user") -> select(['username','id']) -> where(['is_show' => 1,'is_naming' => 1]) -> all();
         $id = $this -> getId($data);
         $ids = array_rand(array_flip($id),5);
-        $data = (new Query()) -> from('user') -> select(['username']) -> where(['is_show' => 1]) -> andWhere(['in','id',$ids]) -> all();
+        $data = (new Query()) -> from('user') -> select(['username']) -> where(['is_show' => 1,'is_naming' => 1]) -> andWhere(['in','id',$ids]) -> all();
         $ids = implode(",",$ids);
         $bol = \Yii::$app -> db -> createCommand("UPDATE `user` SET is_show = 0 WHERE id IN ({$ids})") -> execute();
         $arr = [];
@@ -72,11 +71,20 @@ class NamingController extends AdminController
         if (\Yii::$app -> getRequest() -> getIsGet()){
             return $this -> render('question');
         }
-        $data = (new Query()) -> from("user") -> select(['username','id']) -> all();
-        $question_all = (new Query()) -> from("question") -> select(['questionName','question_id']) -> all();
+        // 获取所有的用户
+        $data = (new Query()) -> from("user") -> select(['username','id']) -> where(['is_naming' => 1]) -> all();
+        // 获取所有问题
+        $question_all = (new Query()) -> from("question") -> select(['questionName','question_id']) ->where(['isDel' => 0,'status' => 1]) -> all();
+        // 判断用户个数如果大于1则进行随机抽取,如果小于1则直接获取用户的信息
         if (count($data) > 1){
             $id = $this -> getId($data);
             $id = array_rand(array_flip($id),1);
+        }else if (count($data) == 0){
+            $arr['msg'] = '暂无候选人员,请联系管理员添加人员';
+            $arr['code'] = 0;
+            return $this -> asJson($arr);
+        }else if (count($data) == 1) {
+            $id = $data[0]['id'];
         }
         $username = (new Query()) -> from('user') -> select(['username']) -> where(['id' => $id]) -> one();
         $question_count = (new Query()) -> from('question') -> where(['isDel' => 0,'status' => 1]) -> count();
