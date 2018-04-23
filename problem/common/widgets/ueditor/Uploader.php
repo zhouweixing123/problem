@@ -297,7 +297,7 @@ class Uploader
      */
     public function getFileInfo()
     {
-        $this->fullName   = str_replace("/../../backend/web", "", $this->fullName);
+        $this->fullName   = str_replace("/../../frontend/web", "", $this->fullName);
         return array(
             "state"    => $this->stateInfo,
             "url"      => $this->fullName,
