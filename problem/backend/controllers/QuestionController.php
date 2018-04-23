@@ -21,21 +21,15 @@ class QuestionController extends AdminController
         return [
             'upload'=>[
                 'class' => 'common\widgets\ueditor\UeditorAction',
-<<<<<<< HEAD
                 'config' => [
                     'imageUrlPrefix' => 'http://problem.zhouweixing.top',//文件访问的路径前缀
                     'imagePathFormat' => '/../upload/{yyyy}{mm}{dd}/{time}{rand:6}',//文件的上传路径
+		    "imagePath"=> "/ueditor/php/",
+   	            "imageMaxSize"=> 2048,
                     'imageRoot' => \Yii::getAlias("@webroot"),
                     'fileFieldName' => 'upBase64',
                 ],
-=======
-                'config'=>[
-                    //上传图片配置
-                    'imageUrlPrefix' => "http://www.problem.com", /* 图片访问路径前缀 */
-                    'imagePathFormat' => "/upload/{yyyy}{mm}{dd}/{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
-                ]
->>>>>>> 0b5b3e152cdcc127e9b08df0b071c3ed514e3828
-            ],
+	],
             #'WebUpload' => [
              #   'class' => 'common\widgets\webuploader\UploaderAction',
               #  'config' => [
