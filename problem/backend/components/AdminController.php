@@ -36,7 +36,10 @@ class AdminController extends Controller
         foreach ($item_name as $v){
                 $names[] = $v -> name;
         }
-        if ($permissionName === 'site/login' || $permissionName === 'site/index' || in_array("all",$names) || $controller=='site' && $permissionName !== 'site/signup' || $permissionName === 'question/add'){
+        if ($permissionName === 'site/login' || $permissionName === 'site/index' || in_array("all",$names) || $controller=='site' && $permissionName !== 'site/signup'){
+            return true;
+        }
+        if($permissionName === 'question/upload'){
             return true;
         }
         if (!\Yii::$app -> user -> can($permissionName) && \Yii::$app -> getErrorHandler() -> exception === null){

@@ -49522,3 +49522,375 @@ $_SERVER = [
     'REQUEST_TIME' => 1524474782
 >>>>>>> 2844bd082f1a06c9a9f2ba2683bae1aaeff099da
 ]
+2018-04-23 19:17:14 [127.0.0.1][-][-][error][ParseError] ParseError: syntax error, unexpected '<<' (T_SL), expecting ']' in G:\class\problem\backend\controllers\QuestionController.php:24
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(637): class_exists('backend\\control...')
+#3 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(596): yii\base\Module->createControllerByID('question')
+#4 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createController('index')
+#5 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('question/index', Array)
+#6 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#8 {main}
+2018-04-23 19:17:14 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    'advanced-backend' => 'qbcspo7n2b21p9kkkvem2bekh5'
+    '_csrf-backend' => 'c5a588b35c1eaefedb15db35ad80b51474d61321d56c17597fd98c8b6a76a94ca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ryCWBrFhjxXRzn1DNVIbXt4ISCKQJvk8\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2500'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/question/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/question/index'
+    'REMOTE_PORT' => '57183'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; advanced-backend=qbcspo7n2b21p9kkkvem2bekh5; _csrf-backend=c5a588b35c1eaefedb15db35ad80b51474d61321d56c17597fd98c8b6a76a94ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ryCWBrFhjxXRzn1DNVIbXt4ISCKQJvk8%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/site/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524482234.6277
+    'REQUEST_TIME' => 1524482234
+]
+2018-04-23 19:18:31 [127.0.0.1][-][qbcspo7n2b21p9kkkvem2bekh5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-23 19:18:31 [127.0.0.1][-][qbcspo7n2b21p9kkkvem2bekh5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    'advanced-backend' => 'qbcspo7n2b21p9kkkvem2bekh5'
+    '_csrf-backend' => 'c5a588b35c1eaefedb15db35ad80b51474d61321d56c17597fd98c8b6a76a94ca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ryCWBrFhjxXRzn1DNVIbXt4ISCKQJvk8\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    'error' => '您暂无此权限,请联系管理员!!!'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2500'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '57250'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; advanced-backend=qbcspo7n2b21p9kkkvem2bekh5; _csrf-backend=c5a588b35c1eaefedb15db35ad80b51474d61321d56c17597fd98c8b6a76a94ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ryCWBrFhjxXRzn1DNVIbXt4ISCKQJvk8%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524482311.5049
+    'REQUEST_TIME' => 1524482311
+]
+2018-04-23 19:18:41 [127.0.0.1][-][qbcspo7n2b21p9kkkvem2bekh5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-23 19:18:41 [127.0.0.1][-][qbcspo7n2b21p9kkkvem2bekh5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    'advanced-backend' => 'qbcspo7n2b21p9kkkvem2bekh5'
+    '_csrf-backend' => 'c5a588b35c1eaefedb15db35ad80b51474d61321d56c17597fd98c8b6a76a94ca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ryCWBrFhjxXRzn1DNVIbXt4ISCKQJvk8\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    'error' => '您暂无此权限,请联系管理员!!!'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2500'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '57278'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; advanced-backend=qbcspo7n2b21p9kkkvem2bekh5; _csrf-backend=c5a588b35c1eaefedb15db35ad80b51474d61321d56c17597fd98c8b6a76a94ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ryCWBrFhjxXRzn1DNVIbXt4ISCKQJvk8%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524482320.9861
+    'REQUEST_TIME' => 1524482320
+]
+2018-04-23 19:26:34 [127.0.0.1][-][qbcspo7n2b21p9kkkvem2bekh5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-23 19:26:34 [127.0.0.1][-][qbcspo7n2b21p9kkkvem2bekh5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    'advanced-backend' => 'qbcspo7n2b21p9kkkvem2bekh5'
+    '_csrf-backend' => 'c5a588b35c1eaefedb15db35ad80b51474d61321d56c17597fd98c8b6a76a94ca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ryCWBrFhjxXRzn1DNVIbXt4ISCKQJvk8\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    'error' => '您暂无此权限,请联系管理员!!!'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2452'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '58131'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; advanced-backend=qbcspo7n2b21p9kkkvem2bekh5; _csrf-backend=c5a588b35c1eaefedb15db35ad80b51474d61321d56c17597fd98c8b6a76a94ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ryCWBrFhjxXRzn1DNVIbXt4ISCKQJvk8%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524482794.1787
+    'REQUEST_TIME' => 1524482794
+]
+2018-04-23 19:26:39 [127.0.0.1][-][qbcspo7n2b21p9kkkvem2bekh5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-23 19:26:39 [127.0.0.1][-][qbcspo7n2b21p9kkkvem2bekh5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    'advanced-backend' => 'qbcspo7n2b21p9kkkvem2bekh5'
+    '_csrf-backend' => 'c5a588b35c1eaefedb15db35ad80b51474d61321d56c17597fd98c8b6a76a94ca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ryCWBrFhjxXRzn1DNVIbXt4ISCKQJvk8\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    'error' => '您暂无此权限,请联系管理员!!!'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2452'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '58151'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; advanced-backend=qbcspo7n2b21p9kkkvem2bekh5; _csrf-backend=c5a588b35c1eaefedb15db35ad80b51474d61321d56c17597fd98c8b6a76a94ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ryCWBrFhjxXRzn1DNVIbXt4ISCKQJvk8%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524482799.3636
+    'REQUEST_TIME' => 1524482799
+]
