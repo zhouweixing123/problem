@@ -17,7 +17,7 @@ AppAsset::addJs($this,'js/question.js');
 <?= $this->render('//layouts/header');?>
 <div class="panel-body mtn">
     <div class="bs-component mb20">
-        <a href="<?= Yii::$app -> urlManager -> createUrl('question/add')?>" class="btn btn-dark btn-block">问题添加</a>
+        <a href="<?= Yii::$app -> urlManager -> createUrl('question/add')?>" class="btn btn-dark">问题添加</a>
     </div>
 </div>
 <div class="agile-grids">

@@ -20,14 +20,17 @@ class AdminController extends Controller
 
     public function beforeAction($action)
     {
+//        \Yii::$app -> session -> remove();die;
         if (!parent::beforeAction($action)){
             return false;
         }
-        $userId = \Yii::$app -> session -> get('userId');
+        $userId = \Yii::$app -> user -> id;
         $controller = \Yii::$app -> controller -> id;
         $action = \Yii::$app -> controller -> action -> id;
         $permissionName = $controller . "/" . $action;
-        if (!$userId && $permissionName !== 'site/login'){
+        if (\Yii::$app -> user -> isGuest && $permissionName != 'site/login'){
+//            echo $userId;die;
+            echo "<script>alert('您还未登录,请先登录');</script>";
             return $this -> redirect('/site/login');
         }
 
@@ -43,8 +46,10 @@ class AdminController extends Controller
             return true;
         }
         if (!\Yii::$app -> user -> can($permissionName) && \Yii::$app -> getErrorHandler() -> exception === null){
-            \Yii::$app->getSession()->setFlash('error', '您暂无此权限,请联系管理员!!!');
-            return $this -> redirect('/site/index');
+            /*\Yii::$app->getSession()->setFlash('error', '您暂无此权限,请联系管理员!!!');
+            return $this -> redirect('/site/index');*/
+            echo "<script>alert('您无此权限,请联系管理员');window.location.href='".\Yii::$app -> urlManager -> createAbsoluteUrl('site/index')."'</script>";
+            return $this -> returnJump('您无此权限,请联系管理员','/site/index');
         }
         return true;
     }
@@ -53,5 +58,13 @@ class AdminController extends Controller
         $this -> session = \Yii::$app -> session;
         $this -> cookie = new Cookie();
         $this -> auth = \Yii::$app -> authManager;
+    }
+    protected function returnJump($message,$url = ""){
+        if ($url === ""){
+            $url = \Yii::$app -> homeUrl;
+        }else{
+            $url = \Yii::$app -> urlManager -> createUrl($url);
+        }
+        return "<script>alert(".$message.");window.location.href='".$url."'</script>";
     }
 }

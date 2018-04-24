@@ -84,7 +84,6 @@ class SiteController extends AdminController
     public function actionLogout()
     {
         \Yii::$app->user->logout(false);
-        Yii::$app->session->remove('userId');
         return $this->goHome();
     }
 
