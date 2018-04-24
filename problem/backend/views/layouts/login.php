@@ -50,6 +50,7 @@ use yii\bootstrap\ActiveForm;
             </div>
             <div class="footer">
                 <p>&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
+                <p>&copy; <?= Html::encode(Yii::$app->bug) ?> <?= date('Y') ?></p>
             </div>
         </div>
     </div>
