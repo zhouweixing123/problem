@@ -97,6 +97,7 @@ abstract class Application extends Module
      * @var string the application name.
      */
     public $name = '问题录入系统';
+    public $bug = '如若发现BUG请及时联系我,联系方式QQ:1140031786,发现BUG有奖哦^O^';
     /**
      * @var string the charset currently used for the application.
      */

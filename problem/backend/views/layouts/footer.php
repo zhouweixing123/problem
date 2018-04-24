@@ -13,4 +13,6 @@ use yii\helpers\Html;
 -->
 <div class="copyrights">
     <p>&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
+    <br/>
+    <p><?= Html::encode(Yii::$app -> bug) ?></p>
 </div>
