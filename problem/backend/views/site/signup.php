@@ -34,11 +34,11 @@ $this->params['breadcrumbs'][] = "添加";
         </div>
 
         <!-- 记住我 -->
-        <div class="checkbox">
+        <!--<div class="checkbox">
             <label>
                 <input type="checkbox"> Check me out
             </label>
-        </div>
+        </div>-->
         <?= Html::submitInput('添加用户', ['class' => 'btn btn-default', 'name' => 'signup-button']) ?>
         <?php ActiveForm::end(); ?>
     </div>
