@@ -22,7 +22,7 @@ class QuestionController extends AdminController
             'upload' => [
                 'class' => 'common\widgets\ueditor\UeditorAction',
                 'config' => [
-                    'imageUrlPrefix' => 'http://www.problem.com',//文件访问的路径前缀
+                    'imageUrlPrefix' => 'http://problem.zhouweixing.top',//文件访问的路径前缀
                     'imagePathFormat' => '/../upload/{yyyy}{mm}{dd}/{time}{rand:6}',//文件的上传路径
                     'imageRoot' => \Yii::getAlias("@webroot"),
                     'fileFieldName' => 'upBase64',
