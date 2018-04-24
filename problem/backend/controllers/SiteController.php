@@ -1,4 +1,5 @@
 <?php
+
 namespace backend\controllers;
 
 use backend\components\AdminController;
@@ -8,6 +9,7 @@ use common\models\LoginForm;
 use backend\models\form\SignupForm;
 use yii\db\Query;
 use yii\data\Pagination;
+
 /**
  * Site controller
  */
@@ -33,26 +35,26 @@ class SiteController extends AdminController
     public function actionIndex()
     {
         $model = new Question();
-        if (\Yii::$app -> getRequest() -> getIsGet()){
+        if (\Yii::$app->getRequest()->getIsGet()) {
             // 获取用户人数
-            $count = (new Query()) -> from('user') -> count();
-            $questionCount = (new Query()) -> from('question') -> where(['isDel' => 0,'status' => 1]) -> count();
-            $page = new Pagination(['totalCount' => $questionCount,'pageSize' => 6]);
-            $questionInfo = Question::find() -> offset($page -> offset) -> where(['isDel' => 0,'status' => 1]) -> limit($page -> limit) -> asArray() -> all();
+            $count = (new Query())->from('user')->count();
+            $questionCount = (new Query())->from('question')->where(['isDel' => 0, 'status' => 1])->count();
+            $page = new Pagination(['totalCount' => $questionCount, 'pageSize' => 6]);
+            $questionInfo = Question::find()->offset($page->offset)->where(['isDel' => 0, 'status' => 1])->limit($page->limit)->asArray()->all();
         }
-        if (\Yii::$app -> getRequest() -> getIsPost()){
-            $name = \Yii::$app -> getRequest() -> post('name','');
-            $count = Question::find()->where(['isDel'=>0,'status' => 1])->andwhere(['and', ['like','questionName',$name],])->count();//获取满足条件的总条数
-            $page = new Pagination(['totalCount' => $count,'pageSize'=>'6']);
+        if (\Yii::$app->getRequest()->getIsPost()) {
+            $name = \Yii::$app->getRequest()->post('name', '');
+            $count = Question::find()->where(['isDel' => 0, 'status' => 1])->andwhere(['and', ['like', 'questionName', $name],])->count();//获取满足条件的总条数
+            $page = new Pagination(['totalCount' => $count, 'pageSize' => '6']);
             $questionInfo = Question::find()
                 ->offset($page->offset)
-                ->where(['isDel'=>0])
-                ->andwhere(['and', ['like','questionName',$name],])
+                ->where(['isDel' => 0])
+                ->andwhere(['and', ['like', 'questionName', $name],])
                 ->limit($page->limit)
                 ->asArray()
                 ->all();
         }
-        return $this->render('index',['count' => $count,'questionCount' => $questionCount,'questionInfo' => $questionInfo,'pages' => $page]);
+        return $this->render('index', ['count' => $count, 'questionCount' => $questionCount, 'questionInfo' => $questionInfo, 'pages' => $page]);
     }
 
     /**
@@ -62,10 +64,10 @@ class SiteController extends AdminController
      */
     public function actionLogin()
     {
-        $this -> layout = 'login';
+        $this->layout = 'login';
         $model = new LoginForm();
-        if ($model->load(\Yii::$app -> request -> post()) && $model->login()) {
-            return $this -> redirect('/site/index');
+        if ($model->load(\Yii::$app->request->post()) && $model->login()) {
+            return $this->redirect('/site/index');
         } else {
             // 展示登录页面
             return $this->render('login', [
@@ -82,13 +84,14 @@ class SiteController extends AdminController
     public function actionLogout()
     {
         \Yii::$app->user->logout(false);
-        Yii::$app -> session -> remove('userId');
+        Yii::$app->session->remove('userId');
         return $this->goHome();
     }
+
     /*
      *  用户添加
      * */
-    public function actionSignup ()
+    public function actionSignup()
     {
         // 实例化一个表单模型，这个表单模型我们还没有创建，等一下后面再创建
         $model = new SignupForm();
@@ -110,9 +113,10 @@ class SiteController extends AdminController
     /*
     *  问题详情
     * */
-    public function actionInfo(){
-        $id = Yii::$app -> getRequest() -> get('id','');
-        $question = (new Query()) -> select(['questionName','questionAnswer']) -> from('question') -> where(['question_id' => $id]) -> one();
-        return $this -> render('info',['data' => $question]);
+    public function actionInfo()
+    {
+        $id = Yii::$app->getRequest()->get('id', '');
+        $question = (new Query())->select(['questionName', 'questionAnswer'])->from('question')->where(['question_id' => $id])->one();
+        return $this->render('info', ['data' => $question]);
     }
 }

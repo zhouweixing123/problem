@@ -26,20 +26,21 @@ class LoginForm extends Model
     public function rules()
     {
         return [
-            [['username','password'],'required'],
-            ['rememberMe','boolean'],
-            ['password','validatePassword']
+            [['username', 'password'], 'required'],
+            ['rememberMe', 'boolean'],
+            ['password', 'validatePassword']
         ];
     }
 
     /*
      *  密码的验证
      * */
-    public function validatePassword($attribute,$params){
-        if ($this -> hasErrors()){
-            $user = $this -> getUser();
-            if (!$user || !$user -> validatePassword($this -> password)){
-                $this -> addError($attribute,"用户名或密码错误");
+    public function validatePassword($attribute, $params)
+    {
+        if ($this->hasErrors()) {
+            $user = $this->getUser();
+            if (!$user || !$user->validatePassword($this->password)) {
+                $this->addError($attribute, "用户名或密码错误");
             }
         }
     }
@@ -47,10 +48,11 @@ class LoginForm extends Model
     /*
      *  登录
      * */
-    public function login(){
-        if ($this -> validate()){
-            \Yii::$app -> session -> set("userId",$this -> getUser() -> attributes['id']);
-            return \Yii::$app -> user -> login($this -> getUser(),$this -> rememberMe ? 3600*24*30:0);
+    public function login()
+    {
+        if ($this->validate()) {
+            \Yii::$app->session->set("userId", $this->getUser()->attributes['id']);
+            return \Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
         }
         return false;
     }
@@ -58,10 +60,11 @@ class LoginForm extends Model
     /*
      *  获取用户
      * */
-    public function getUser(){
-        if ($this -> _user === null){
-            $this -> _user = User::findByUserName($this -> username);
+    public function getUser()
+    {
+        if ($this->_user === null) {
+            $this->_user = User::findByUserName($this->username);
         }
-        return $this -> _user;
+        return $this->_user;
     }
 }

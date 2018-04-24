@@ -16,7 +16,7 @@ AppAsset::addJs($this,'js/table.js');
 <div class="panel-body mtn">
 
     <div class="bs-component mb20">
-        <a href="<?= Yii::$app -> urlManager -> createUrl('power/create')?>" class="btn btn-dark btn-block">添加权限</a>
+        <a href="<?= Yii::$app -> urlManager -> createUrl('power/create')?>" class="btn btn-dark">添加权限</a>
     </div>
 </div>
         <div class="agile-grids">

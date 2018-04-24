@@ -192,7 +192,7 @@ use yii\widgets\Breadcrumbs;
         </div>
         <div class="breadcrumb">
             <?= Breadcrumbs::widget([
-                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : ["home"],
-                'class' => 'breadcrumb-item a_fff'
+                'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+                'class' => 'breadcrumb-item a_fff',
             ]) ?>
         </div>
