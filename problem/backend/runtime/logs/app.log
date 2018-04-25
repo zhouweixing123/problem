@@ -61792,3 +61792,2501 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1524626214.8683
     'REQUEST_TIME' => 1524626214
 ]
+2018-04-25 14:40:43 [127.0.0.1][-][4pr9gruesvnnss3e966ddlio75][error][yii\db\Exception] yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in G:\class\problem\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 G:\class\problem\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 G:\class\problem\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 G:\class\problem\vendor\yiisoft\yii2\db\Command.php(1143): yii\db\Command->prepare(true)
+#4 G:\class\problem\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 G:\class\problem\vendor\yiisoft\yii2\db\mysql\Schema.php(312): yii\db\Command->queryAll()
+#6 G:\class\problem\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 G:\class\problem\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#8 G:\class\problem\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#9 G:\class\problem\vendor\yiisoft\yii2\db\ActiveRecord.php(384): yii\db\Schema->getTableSchema('{{%user}}')
+#10 G:\class\problem\vendor\yiisoft\yii2\db\ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#11 G:\class\problem\vendor\yiisoft\yii2\db\ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 G:\class\problem\vendor\yiisoft\yii2\db\BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#13 G:\class\problem\backend\models\User.php(90): yii\db\BaseActiveRecord::findOne(Array)
+#14 G:\class\problem\vendor\yiisoft\yii2\web\User.php(690): backend\models\User::findIdentity('1')
+#15 G:\class\problem\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#16 G:\class\problem\vendor\yiisoft\yii2\web\User.php(370): yii\web\User->getIdentity()
+#17 G:\class\problem\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getId()
+#18 G:\class\problem\backend\components\AdminController.php(29): yii\base\Component->__get('id')
+#19 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(155): backend\components\AdminController->beforeAction(Object(yii\base\InlineAction))
+#20 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#21 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#22 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#24 {main}
+Additional Information:
+
+2018-04-25 14:40:41 [127.0.0.1][-][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2220'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '52460'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524638441.1797
+    'REQUEST_TIME' => 1524638441
+]
+2018-04-25 19:18:26 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:18:26 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2240'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59081'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655106.0701
+    'REQUEST_TIME' => 1524655106
+]
+2018-04-25 19:18:36 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:18:36 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2240'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59110'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655116.0325
+    'REQUEST_TIME' => 1524655116
+]
+2018-04-25 19:19:41 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:19:41 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '896'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59237'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655181.7507
+    'REQUEST_TIME' => 1524655181
+]
+2018-04-25 19:19:49 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:19:49 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2240'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59274'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655189.3638
+    'REQUEST_TIME' => 1524655189
+]
+2018-04-25 19:20:04 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:20:04 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2240'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59314'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655204.3596
+    'REQUEST_TIME' => 1524655204
+]
+2018-04-25 19:21:02 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: question/update&id=2 in G:\class\problem\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('update&id=2', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('question/update...', Array)
+#2 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:21:02 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '896'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/question/update&id=2'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/question/update&id=2'
+    'REMOTE_PORT' => '59460'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/question/update?id=2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655262.0283
+    'REQUEST_TIME' => 1524655262
+]
+2018-04-25 19:21:03 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:21:03 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '896'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59460'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655263.6226
+    'REQUEST_TIME' => 1524655263
+]
+2018-04-25 19:21:14 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: question/update&id=2 in G:\class\problem\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('update&id=2', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('question/update...', Array)
+#2 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:21:14 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2488'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/question/update&id=2'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/question/update&id=2'
+    'REMOTE_PORT' => '59494'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/question/update?id=2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655274.1601
+    'REQUEST_TIME' => 1524655274
+]
+2018-04-25 19:21:15 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:21:15 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2488'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59494'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655275.667
+    'REQUEST_TIME' => 1524655275
+]
+2018-04-25 19:21:17 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: question/update&id=2 in G:\class\problem\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('update&id=2', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('question/update...', Array)
+#2 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:21:17 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2488'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/question/update&id=2'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/question/update&id=2'
+    'REMOTE_PORT' => '59494'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655277.703
+    'REQUEST_TIME' => 1524655277
+]
+2018-04-25 19:21:19 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:21:19 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2488'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59494'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655279.3148
+    'REQUEST_TIME' => 1524655279
+]
+2018-04-25 19:21:23 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:21:23 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2488'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59527'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655283.3074
+    'REQUEST_TIME' => 1524655283
+]
+2018-04-25 19:21:27 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:21:27 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2488'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59526'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655287.4663
+    'REQUEST_TIME' => 1524655287
+]
+2018-04-25 19:21:34 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: question/update&id=2 in G:\class\problem\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('update&id=2', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('question/update...', Array)
+#2 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:21:34 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2348'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/question/update&id=2'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/question/update&id=2'
+    'REMOTE_PORT' => '59525'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/question/update?id=2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655294.9169
+    'REQUEST_TIME' => 1524655294
+]
+2018-04-25 19:21:36 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:21:36 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2348'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59579'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655296.7586
+    'REQUEST_TIME' => 1524655296
+]
+2018-04-25 19:22:02 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: question/update&id=2 in G:\class\problem\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('update&id=2', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('question/update...', Array)
+#2 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:22:01 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2488'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/question/update&id=2'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/question/update&id=2'
+    'REMOTE_PORT' => '59627'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/question/update?id=2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655321.9452
+    'REQUEST_TIME' => 1524655321
+]
+2018-04-25 19:22:03 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:22:03 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2488'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59627'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655323.6521
+    'REQUEST_TIME' => 1524655323
+]
+2018-04-25 19:22:08 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:22:08 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2488'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59627'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655328.12
+    'REQUEST_TIME' => 1524655328
+]
+2018-04-25 19:22:12 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:22:12 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2488'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59671'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655332.1063
+    'REQUEST_TIME' => 1524655332
+]
+2018-04-25 19:23:17 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:23:17 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2348'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59798'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655397.4129
+    'REQUEST_TIME' => 1524655397
+]
+2018-04-25 19:24:23 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:24:23 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+        '修改成功！' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+    '修改成功！' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2348'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59917'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655463.5665
+    'REQUEST_TIME' => 1524655463
+]
+2018-04-25 19:24:27 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:24:27 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+        '修改成功！' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+    '修改成功！' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2348'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59917'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655467.4063
+    'REQUEST_TIME' => 1524655467
+]
+2018-04-25 19:24:34 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:24:34 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+        '修改成功！' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+    '修改成功！' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2348'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '59969'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655474.0844
+    'REQUEST_TIME' => 1524655474
+]
+2018-04-25 19:27:20 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:27:20 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+        '修改成功！' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+    '修改成功！' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2348'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '60314'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655640.3167
+    'REQUEST_TIME' => 1524655640
+]
+2018-04-25 19:27:24 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:27:24 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+        '修改成功！' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+    '修改成功！' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2348'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '60316'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655644.928
+    'REQUEST_TIME' => 1524655644
+]
+2018-04-25 19:27:31 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:27:31 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+        '修改成功！' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+    '修改成功！' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2348'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '60356'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655651.8383
+    'REQUEST_TIME' => 1524655651
+]
+2018-04-25 19:27:36 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:27:36 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+        '修改成功！' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+    '修改成功！' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2348'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '60356'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655656.0664
+    'REQUEST_TIME' => 1524655656
+]
+2018-04-25 19:27:43 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 19:27:43 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+        '修改成功！' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+    '修改成功！' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2348'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '60406'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524655663.5029
+    'REQUEST_TIME' => 1524655663
+]
+2018-04-25 23:38:11 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 23:38:11 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+        '修改成功！' => -1
+        '保存成功' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+    '修改成功！' => true
+    '保存成功' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2352'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '52165'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524670691.327
+    'REQUEST_TIME' => 1524670691
+]
+2018-04-25 23:41:01 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 23:41:01 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+        '修改成功！' => -1
+        '保存成功' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+    '修改成功！' => true
+    '保存成功' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2352'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '52456'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524670861.1483
+    'REQUEST_TIME' => 1524670861
+]
+2018-04-25 23:41:24 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 23:41:24 [127.0.0.1][10][t62dk1niv5c35m62cqb4c2qgg1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 't62dk1niv5c35m62cqb4c2qgg1'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => '7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"9vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        '值不能是空白的' => -1
+        '修改成功！' => -1
+        '保存成功' => -1
+    ]
+    'userId' => '10'
+    '__id' => '10'
+    '值不能是空白的' => true
+    '修改成功！' => true
+    '保存成功' => true
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2352'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '52513'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=t62dk1niv5c35m62cqb4c2qgg1; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=7f2c6aa767d54ae9f72eca181c90b18365f551ad9c6595d46707c63b0139c3e6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%229vC-EhBx2Xg4kNVtpEBFEwLWjkaSK0KG%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524670883.9869
+    'REQUEST_TIME' => 1524670883
+]
