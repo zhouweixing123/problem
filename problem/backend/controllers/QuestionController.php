@@ -174,7 +174,7 @@ class QuestionController extends AdminController
             ->asArray()
             ->one();
         if (\Yii::$app -> getRequest() -> getIsGet()){
-            return $this -> render('update',['data' => $questionInfo]);
+            return $this -> render('update',['data' => $questionInfo,'username' => $this -> username]);
         }
 
         if (\Yii::$app->getRequest()->getIsPost()){
@@ -183,7 +183,6 @@ class QuestionController extends AdminController
             $questionAnswer = \Yii::$app->request->post('w1');//答案
             $questionNameInfo = \Yii::$app->db->createCommand("select questionName from question where questionName = '$questionName'")->queryOne();
             if (empty($questionAnswer) || empty($questionName)){
-                echo 222222222;die;
                 \Yii::$app -> session -> setFlash("值不能是空白的");
                 return $this->redirect('/question/update?id='.$question_id);
             }
