@@ -16,7 +16,7 @@ $this -> params['breadcrumbs'][] = "添加问题";
                 <input type="hidden" name="_csrf-backend" value="<?= Yii::$app -> getRequest() -> getCsrfToken()?>">
                 <div class="username">
                     <span class="username">问题名称:</span>
-                    <input type="text" class="name" name="name" placeholder="请输入权限问题名称">
+                    <input type="text" class="name" name="name" placeholder="请输入问题名称">
                     <div class="clearfix"></div>
                 </div>
                 <div class="username" style="position: relative;left:-270px;">

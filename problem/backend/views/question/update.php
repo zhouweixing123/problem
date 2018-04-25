@@ -6,7 +6,7 @@ $this->params['breadcrumbs'][] = [
     'label' => '问题列表',
     'url' => \yii\helpers\Url::to(['question/index'])
 ];
-$this -> params['breadcrumbs'][] = "添加问题";
+$this -> params['breadcrumbs'][] = "问题修改";
 ?>
 <?= $this->render('//layouts/header',['username' => $username]);?>
 <div class="main-wthree c_g_border">
@@ -17,7 +17,7 @@ $this -> params['breadcrumbs'][] = "添加问题";
                 <input type="hidden" name="question_id" value="<?php echo $data['question_id'] ?>">
                 <div class="username">
                     <span class="username">问题名称:</span>
-                    <input type="text" class="name" name="name" placeholder="请输入权限问题名称" value="<?=$data['questionName']?>">
+                    <input type="text" class="name" name="name" placeholder="请输入问题名称" value="<?=$data['questionName']?>">
                     <div class="clearfix"></div>
                 </div>
                 <div class="username" style="position: relative;left:-270px;">
@@ -25,7 +25,7 @@ $this -> params['breadcrumbs'][] = "添加问题";
                     <div class="clearfix"></div>
                 </div>
                 <div class="form-dignup">
-                    <input type="submit" class="login" value="添加">
+                    <input type="submit" class="login" value="修改">
                 </div>
             </form>
         </div>

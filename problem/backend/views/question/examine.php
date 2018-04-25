@@ -38,7 +38,7 @@ AppAsset::addJs($this,'js/question.js');
                         <td><input type="checkbox" name="id" value="<?= $v['question_id']?>"></td>
                         <td><?= $v['question_id']?></td>
                         <td><div style="width:100px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><?= $v['questionName']?></div></td>
-                        <td><div style="width:100px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;"><?= $v['questionAnswer']?></div></td>
+                        <td><div style="width:100px; height: 30px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;height: 30px"><?= $v['questionAnswer']?></div></td>
                         <td>
 
                             <?php if ($v['status'] == 0):?>
