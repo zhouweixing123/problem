@@ -35,7 +35,7 @@ class AdminController extends Controller
             return $this -> redirect('/site/login');
         }
         $userId = \Yii::$app -> user ->id;
-        $username = User::getNameById($userId) -> toArray();
+        $username = User::getNameById($userId);
         $this -> username = $username['username'];
         $item_name = \Yii::$app -> authManager ->getPermissionsByUser($userId);
         $names = [];
