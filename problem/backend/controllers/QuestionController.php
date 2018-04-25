@@ -180,13 +180,13 @@ class QuestionController extends AdminController
         if (\Yii::$app->getRequest()->getIsPost()){
             $question_id = \Yii::$app->request->post('question_id');
             $questionName = \Yii::$app->request->post('name');//问题
-            $questionAnswer = \Yii::$app->request->post('w1');//答案
+            $questionAnswer = \Yii::$app->request->post('w0');//答案
             $questionNameInfo = \Yii::$app->db->createCommand("select questionName from question where questionName = '$questionName'")->queryOne();
             if (empty($questionAnswer) || empty($questionName)){
                 \Yii::$app -> session -> setFlash("值不能是空白的");
                 return $this->redirect('/question/update?id='.$question_id);
             }
-            if (empty($questionNameInfo['questionName'])){
+            if (!empty($questionNameInfo['questionName'])){
                 $resault = \Yii::$app->db->createCommand()->update('question',['questionName'=>$questionName,'questionAnswer'=>$questionAnswer],['question_id'=>$question_id])->execute();
                 if ($resault){
                     \Yii::$app -> session ->setFlash('修改成功！');
