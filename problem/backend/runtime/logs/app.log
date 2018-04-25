@@ -59533,3 +59533,2262 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1524597098.3177
     'REQUEST_TIME' => 1524597098
 ]
+2018-04-25 03:46:47 [127.0.0.1][10][etne419gpgh25g69vighdf05u5][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\layouts\header.php:176
+Stack trace:
+#0 G:\class\problem\backend\views\layouts\header.php(176): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 176, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, NULL)
+#4 G:\class\problem\backend\views\site\index.php(15): yii\base\View->render('//layouts/heade...')
+#5 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#6 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#7 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\SiteController))
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\SiteController))
+#9 G:\class\problem\backend\controllers\SiteController.php(61): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\SiteController->actionIndex()
+#11 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#15 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-04-25 03:46:45 [127.0.0.1][10][etne419gpgh25g69vighdf05u5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'etne419gpgh25g69vighdf05u5'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => 'a02da57d4128f99a7edacae441fbdc2f281f9292cf210edf4f9e7f41d070ffb6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"TdGJ_GfIicTea0KxmS6Bh23Hgx4x6zqn\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'userId' => '10'
+    'error' => '您暂无此权限,请联系管理员!!!'
+    '__id' => '10'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2748'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/site/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/site/index'
+    'REMOTE_PORT' => '54640'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=etne419gpgh25g69vighdf05u5; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=a02da57d4128f99a7edacae441fbdc2f281f9292cf210edf4f9e7f41d070ffb6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22TdGJ_GfIicTea0KxmS6Bh23Hgx4x6zqn%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/site/signup'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36 OPR/52.0.2871.64 (Edition Baidu)'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524599205.9826
+    'REQUEST_TIME' => 1524599205
+]
+2018-04-25 03:49:07 [127.0.0.1][10][etne419gpgh25g69vighdf05u5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 03:49:07 [127.0.0.1][10][etne419gpgh25g69vighdf05u5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'etne419gpgh25g69vighdf05u5'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => 'a02da57d4128f99a7edacae441fbdc2f281f9292cf210edf4f9e7f41d070ffb6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"TdGJ_GfIicTea0KxmS6Bh23Hgx4x6zqn\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'userId' => '10'
+    'error' => '您暂无此权限,请联系管理员!!!'
+    '__id' => '10'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2788'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '54700'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=etne419gpgh25g69vighdf05u5; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=a02da57d4128f99a7edacae441fbdc2f281f9292cf210edf4f9e7f41d070ffb6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22TdGJ_GfIicTea0KxmS6Bh23Hgx4x6zqn%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36 OPR/52.0.2871.64 (Edition Baidu)'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524599347.0637
+    'REQUEST_TIME' => 1524599347
+]
+2018-04-25 03:53:16 [127.0.0.1][10][etne419gpgh25g69vighdf05u5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 03:53:16 [127.0.0.1][10][etne419gpgh25g69vighdf05u5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'etne419gpgh25g69vighdf05u5'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => 'a02da57d4128f99a7edacae441fbdc2f281f9292cf210edf4f9e7f41d070ffb6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"TdGJ_GfIicTea0KxmS6Bh23Hgx4x6zqn\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'userId' => '10'
+    'error' => '您暂无此权限,请联系管理员!!!'
+    '__id' => '10'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2788'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '55071'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=etne419gpgh25g69vighdf05u5; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=a02da57d4128f99a7edacae441fbdc2f281f9292cf210edf4f9e7f41d070ffb6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22TdGJ_GfIicTea0KxmS6Bh23Hgx4x6zqn%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36 OPR/52.0.2871.64 (Edition Baidu)'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524599596.684
+    'REQUEST_TIME' => 1524599596
+]
+2018-04-25 03:53:42 [127.0.0.1][10][etne419gpgh25g69vighdf05u5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 03:53:42 [127.0.0.1][10][etne419gpgh25g69vighdf05u5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'etne419gpgh25g69vighdf05u5'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => 'a02da57d4128f99a7edacae441fbdc2f281f9292cf210edf4f9e7f41d070ffb6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"TdGJ_GfIicTea0KxmS6Bh23Hgx4x6zqn\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'userId' => '10'
+    'error' => '您暂无此权限,请联系管理员!!!'
+    '__id' => '10'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2788'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '55113'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=etne419gpgh25g69vighdf05u5; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=a02da57d4128f99a7edacae441fbdc2f281f9292cf210edf4f9e7f41d070ffb6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22TdGJ_GfIicTea0KxmS6Bh23Hgx4x6zqn%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36 OPR/52.0.2871.64 (Edition Baidu)'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524599622.7784
+    'REQUEST_TIME' => 1524599622
+]
+2018-04-25 03:53:46 [127.0.0.1][10][etne419gpgh25g69vighdf05u5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "css/bootstrap.css.map". in G:\class\problem\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('css/bootstrap.c...', Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in G:\class\problem\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-04-25 03:53:46 [127.0.0.1][10][etne419gpgh25g69vighdf05u5][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'etne419gpgh25g69vighdf05u5'
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+    '_csrf-backend' => 'a02da57d4128f99a7edacae441fbdc2f281f9292cf210edf4f9e7f41d070ffb6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"TdGJ_GfIicTea0KxmS6Bh23Hgx4x6zqn\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    'userId' => '10'
+    'error' => '您暂无此权限,请联系管理员!!!'
+    '__id' => '10'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2788'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/css/bootstrap.css.map'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/css/bootstrap.css.map'
+    'REMOTE_PORT' => '55113'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=etne419gpgh25g69vighdf05u5; _identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D; _csrf-backend=a02da57d4128f99a7edacae441fbdc2f281f9292cf210edf4f9e7f41d070ffb6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22TdGJ_GfIicTea0KxmS6Bh23Hgx4x6zqn%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36 OPR/52.0.2871.64 (Edition Baidu)'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524599626.779
+    'REQUEST_TIME' => 1524599626
+]
+2018-04-25 09:58:35 [127.0.0.1][-][-][error][yii\db\Exception] yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in G:\class\problem\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 G:\class\problem\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 G:\class\problem\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 G:\class\problem\vendor\yiisoft\yii2\db\Command.php(1143): yii\db\Command->prepare(true)
+#4 G:\class\problem\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 G:\class\problem\vendor\yiisoft\yii2\db\mysql\Schema.php(312): yii\db\Command->queryAll()
+#6 G:\class\problem\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 G:\class\problem\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#8 G:\class\problem\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#9 G:\class\problem\vendor\yiisoft\yii2\db\ActiveRecord.php(384): yii\db\Schema->getTableSchema('{{%user}}')
+#10 G:\class\problem\vendor\yiisoft\yii2\db\ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#11 G:\class\problem\vendor\yiisoft\yii2\db\ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 G:\class\problem\vendor\yiisoft\yii2\db\BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#13 G:\class\problem\backend\models\User.php(90): yii\db\BaseActiveRecord::findOne(Array)
+#14 G:\class\problem\vendor\yiisoft\yii2\web\User.php(595): backend\models\User::findIdentity('10')
+#15 G:\class\problem\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#16 G:\class\problem\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#17 G:\class\problem\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#18 G:\class\problem\vendor\yiisoft\yii2\web\User.php(370): yii\web\User->getIdentity()
+#19 G:\class\problem\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getId()
+#20 G:\class\problem\backend\components\AdminController.php(27): yii\base\Component->__get('id')
+#21 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(155): backend\components\AdminController->beforeAction(Object(yii\base\InlineAction))
+#22 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#23 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#24 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#26 {main}
+Additional Information:
+
+2018-04-25 09:58:32 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2356'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55839'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524621512.7478
+    'REQUEST_TIME' => 1524621512
+]
+2018-04-25 10:20:46 [127.0.0.1][-][-][error][yii\db\Exception] yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in G:\class\problem\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 G:\class\problem\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 G:\class\problem\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 G:\class\problem\vendor\yiisoft\yii2\db\Command.php(1143): yii\db\Command->prepare(true)
+#4 G:\class\problem\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 G:\class\problem\vendor\yiisoft\yii2\db\mysql\Schema.php(312): yii\db\Command->queryAll()
+#6 G:\class\problem\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 G:\class\problem\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#8 G:\class\problem\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#9 G:\class\problem\vendor\yiisoft\yii2\db\ActiveRecord.php(384): yii\db\Schema->getTableSchema('{{%user}}')
+#10 G:\class\problem\vendor\yiisoft\yii2\db\ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#11 G:\class\problem\vendor\yiisoft\yii2\db\ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 G:\class\problem\vendor\yiisoft\yii2\db\BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#13 G:\class\problem\backend\models\User.php(90): yii\db\BaseActiveRecord::findOne(Array)
+#14 G:\class\problem\vendor\yiisoft\yii2\web\User.php(595): backend\models\User::findIdentity('10')
+#15 G:\class\problem\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#16 G:\class\problem\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#17 G:\class\problem\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#18 G:\class\problem\vendor\yiisoft\yii2\web\User.php(370): yii\web\User->getIdentity()
+#19 G:\class\problem\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getId()
+#20 G:\class\problem\backend\components\AdminController.php(27): yii\base\Component->__get('id')
+#21 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(155): backend\components\AdminController->beforeAction(Object(yii\base\InlineAction))
+#22 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#23 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#24 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#26 {main}
+Additional Information:
+
+2018-04-25 10:20:45 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2352'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58516'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524622845.372
+    'REQUEST_TIME' => 1524622845
+]
+2018-04-25 10:21:19 [127.0.0.1][-][-][error][yii\db\Exception] yii\db\Exception: SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+ in G:\class\problem\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 G:\class\problem\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 G:\class\problem\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 G:\class\problem\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 G:\class\problem\vendor\yiisoft\yii2\db\Command.php(1143): yii\db\Command->prepare(true)
+#4 G:\class\problem\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 G:\class\problem\vendor\yiisoft\yii2\db\mysql\Schema.php(312): yii\db\Command->queryAll()
+#6 G:\class\problem\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 G:\class\problem\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('user')
+#8 G:\class\problem\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#9 G:\class\problem\vendor\yiisoft\yii2\db\ActiveRecord.php(384): yii\db\Schema->getTableSchema('{{%user}}')
+#10 G:\class\problem\vendor\yiisoft\yii2\db\ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#11 G:\class\problem\vendor\yiisoft\yii2\db\ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 G:\class\problem\vendor\yiisoft\yii2\db\BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#13 G:\class\problem\backend\models\User.php(90): yii\db\BaseActiveRecord::findOne(Array)
+#14 G:\class\problem\vendor\yiisoft\yii2\web\User.php(595): backend\models\User::findIdentity('10')
+#15 G:\class\problem\vendor\yiisoft\yii2\web\User.php(314): yii\web\User->getIdentityAndDurationFromCookie()
+#16 G:\class\problem\vendor\yiisoft\yii2\web\User.php(707): yii\web\User->loginByCookie()
+#17 G:\class\problem\vendor\yiisoft\yii2\web\User.php(192): yii\web\User->renewAuthStatus()
+#18 G:\class\problem\vendor\yiisoft\yii2\web\User.php(370): yii\web\User->getIdentity()
+#19 G:\class\problem\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getId()
+#20 G:\class\problem\backend\components\AdminController.php(27): yii\base\Component->__get('id')
+#21 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(155): backend\components\AdminController->beforeAction(Object(yii\base\InlineAction))
+#22 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#23 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#24 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#26 {main}
+Additional Information:
+
+2018-04-25 10:21:17 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_identity-backend' => 'a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a:2:{i:0;s:17:\"_identity-backend\";i:1;s:17:\"[\"10\",\"\",2592000]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2352'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '58625'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => '_identity-backend=a243c28762ea54ad6a22ad7fde726696b5aebad55d53529cf6e8d3a7208e1cc9a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A17%3A%22%5B%2210%22%2C%22%22%2C2592000%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524622877.6121
+    'REQUEST_TIME' => 1524622877
+]
+2018-04-25 10:21:47 [127.0.0.1][1][55l5t21bajds1b0jivbo64p7e2][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\layouts\header.php:176
+Stack trace:
+#0 G:\class\problem\backend\views\layouts\header.php(176): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 176, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, NULL)
+#4 G:\class\problem\backend\views\site\signup.php(14): yii\base\View->render('//layouts/heade...')
+#5 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#6 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#7 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\SiteController))
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('signup', Array, Object(backend\controllers\SiteController))
+#9 G:\class\problem\backend\controllers\SiteController.php(112): yii\base\Controller->render('signup', Array)
+#10 [internal function]: backend\controllers\SiteController->actionSignup()
+#11 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#14 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#15 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-04-25 10:21:46 [127.0.0.1][1][55l5t21bajds1b0jivbo64p7e2][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '55l5t21bajds1b0jivbo64p7e2'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '61475332c47947c1d2c0b0a23aff2e70d2a5de5f75b2d06318a8e6021bfb666ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"NyCsoXem592IbrWyiNFxwCC8XAGAM4JO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2352'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/site/signup'
+    'REMOTE_PORT' => '58715'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=55l5t21bajds1b0jivbo64p7e2; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=61475332c47947c1d2c0b0a23aff2e70d2a5de5f75b2d06318a8e6021bfb666ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22NyCsoXem592IbrWyiNFxwCC8XAGAM4JO%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/site/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524622906.15
+    'REQUEST_TIME' => 1524622906
+]
+2018-04-25 11:00:09 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\layouts\header.php:176
+Stack trace:
+#0 G:\class\problem\backend\views\layouts\header.php(176): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 176, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, NULL)
+#4 G:\class\problem\backend\views\question\examine.php(17): yii\base\View->render('//layouts/heade...')
+#5 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#6 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#7 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\QuestionController))
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('examine', Array, Object(backend\controllers\QuestionController))
+#9 G:\class\problem\backend\controllers\QuestionController.php(95): yii\base\Controller->render('examine', Array)
+#10 [internal function]: backend\controllers\QuestionController->actionExamine()
+#11 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('examine', Array)
+#14 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('question/examin...', Array)
+#15 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-04-25 11:00:06 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '868'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/question/examine'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/question/examine'
+    'REMOTE_PORT' => '61579'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/site/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524625205.8715
+    'REQUEST_TIME' => 1524625205
+]
+2018-04-25 11:01:08 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\layouts\header.php:176
+Stack trace:
+#0 G:\class\problem\backend\views\layouts\header.php(176): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 176, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, NULL)
+#4 G:\class\problem\backend\views\question\examine.php(17): yii\base\View->render('//layouts/heade...')
+#5 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#6 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#7 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\QuestionController))
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('examine', Array, Object(backend\controllers\QuestionController))
+#9 G:\class\problem\backend\controllers\QuestionController.php(95): yii\base\Controller->render('examine', Array)
+#10 [internal function]: backend\controllers\QuestionController->actionExamine()
+#11 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('examine', Array)
+#14 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('question/examin...', Array)
+#15 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-04-25 11:01:07 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '868'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/question/examine'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/question/examine'
+    'REMOTE_PORT' => '61608'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/site/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524625267.673
+    'REQUEST_TIME' => 1524625267
+]
+2018-04-25 11:01:24 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\question\examine.php:17
+Stack trace:
+#0 G:\class\problem\backend\views\question\examine.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 17, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\QuestionController))
+#4 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('examine', Array, Object(backend\controllers\QuestionController))
+#5 G:\class\problem\backend\controllers\QuestionController.php(95): yii\base\Controller->render('examine', Array)
+#6 [internal function]: backend\controllers\QuestionController->actionExamine()
+#7 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('examine', Array)
+#10 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('question/examin...', Array)
+#11 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-04-25 11:01:22 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '868'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/question/examine'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/question/examine'
+    'REMOTE_PORT' => '61623'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/site/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524625282.9305
+    'REQUEST_TIME' => 1524625282
+]
+2018-04-25 11:04:02 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\question\examine.php:17
+Stack trace:
+#0 G:\class\problem\backend\views\question\examine.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 17, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\QuestionController))
+#4 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('examine', Array, Object(backend\controllers\QuestionController))
+#5 G:\class\problem\backend\controllers\QuestionController.php(95): yii\base\Controller->render('examine', Array)
+#6 [internal function]: backend\controllers\QuestionController->actionExamine()
+#7 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('examine', Array)
+#10 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('question/examin...', Array)
+#11 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-04-25 11:04:01 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '868'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/question/examine'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/question/examine'
+    'REMOTE_PORT' => '61674'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/site/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524625441.2132
+    'REQUEST_TIME' => 1524625441
+]
+2018-04-25 11:04:26 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\question\examine.php:17
+Stack trace:
+#0 G:\class\problem\backend\views\question\examine.php(17): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 17, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\QuestionController))
+#4 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('examine', Array, Object(backend\controllers\QuestionController))
+#5 G:\class\problem\backend\controllers\QuestionController.php(96): yii\base\Controller->render('examine', Array)
+#6 [internal function]: backend\controllers\QuestionController->actionExamine()
+#7 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('examine', Array)
+#10 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('question/examin...', Array)
+#11 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-04-25 11:04:24 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '868'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/question/examine'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/question/examine'
+    'REMOTE_PORT' => '61683'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/site/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524625464.9652
+    'REQUEST_TIME' => 1524625464
+]
+2018-04-25 11:08:33 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\layouts\header.php:176
+Stack trace:
+#0 G:\class\problem\backend\views\layouts\header.php(176): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 176, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, NULL)
+#4 G:\class\problem\backend\views\power\index.php(15): yii\base\View->render('//layouts/heade...')
+#5 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#6 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#7 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\PowerController))
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\PowerController))
+#9 G:\class\problem\backend\controllers\PowerController.php(22): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\PowerController->actionIndex()
+#11 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('power/index', Array)
+#15 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-04-25 11:08:32 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2472'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/power/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/power/index'
+    'REMOTE_PORT' => '61799'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/question/examine'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524625712.3567
+    'REQUEST_TIME' => 1524625712
+]
+2018-04-25 11:08:51 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\layouts\header.php:176
+Stack trace:
+#0 G:\class\problem\backend\views\layouts\header.php(176): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 176, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, NULL)
+#4 G:\class\problem\backend\views\power\index.php(15): yii\base\View->render('//layouts/heade...')
+#5 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#6 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#7 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\PowerController))
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\PowerController))
+#9 G:\class\problem\backend\controllers\PowerController.php(22): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\PowerController->actionIndex()
+#11 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('power/index', Array)
+#15 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-04-25 11:08:50 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2472'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/power/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/power/index'
+    'REMOTE_PORT' => '61809'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/question/examine'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524625730.4845
+    'REQUEST_TIME' => 1524625730
+]
+2018-04-25 11:09:19 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\power\create.php:12
+Stack trace:
+#0 G:\class\problem\backend\views\power\create.php(12): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 12, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\PowerController))
+#4 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\PowerController))
+#5 G:\class\problem\backend\controllers\PowerController.php(30): yii\base\Controller->render('create')
+#6 [internal function]: backend\controllers\PowerController->actionCreate()
+#7 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#10 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('power/create', Array)
+#11 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-04-25 11:09:18 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2472'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/power/create'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/power/create'
+    'REMOTE_PORT' => '61818'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/power/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524625758.1503
+    'REQUEST_TIME' => 1524625758
+]
+2018-04-25 11:10:25 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\layouts\header.php:176
+Stack trace:
+#0 G:\class\problem\backend\views\layouts\header.php(176): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 176, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, NULL)
+#4 G:\class\problem\backend\views\naming\index.php(16): yii\base\View->render('//layouts/heade...')
+#5 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#6 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#7 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\NamingController))
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\NamingController))
+#9 G:\class\problem\backend\controllers\NamingController.php(19): yii\base\Controller->render('index')
+#10 [internal function]: backend\controllers\NamingController->actionIndex()
+#11 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('index', Array)
+#14 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('naming/index', Array)
+#15 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-04-25 11:10:24 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2472'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/naming/index'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/naming/index'
+    'REMOTE_PORT' => '61844'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/power/create'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524625823.9896
+    'REQUEST_TIME' => 1524625823
+]
+2018-04-25 11:12:19 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\layouts\header.php:176
+Stack trace:
+#0 G:\class\problem\backend\views\layouts\header.php(176): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 176, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, NULL)
+#4 G:\class\problem\backend\views\question\add.php(11): yii\base\View->render('//layouts/heade...')
+#5 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#6 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#7 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\QuestionController))
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('add', Array, Object(backend\controllers\QuestionController))
+#9 G:\class\problem\backend\controllers\QuestionController.php(145): yii\base\Controller->render('add', Array)
+#10 [internal function]: backend\controllers\QuestionController->actionAdd()
+#11 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#12 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('add', Array)
+#14 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('question/add', Array)
+#15 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2018-04-25 11:12:17 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2472'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/question/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/question/add'
+    'REMOTE_PORT' => '61900'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/question/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524625937.8583
+    'REQUEST_TIME' => 1524625937
+]
+2018-04-25 11:12:28 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\question\add.php:11
+Stack trace:
+#0 G:\class\problem\backend\views\question\add.php(11): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 11, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\QuestionController))
+#4 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('add', Array, Object(backend\controllers\QuestionController))
+#5 G:\class\problem\backend\controllers\QuestionController.php(145): yii\base\Controller->render('add', Array)
+#6 [internal function]: backend\controllers\QuestionController->actionAdd()
+#7 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('add', Array)
+#10 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('question/add', Array)
+#11 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-04-25 11:12:27 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2472'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/question/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/question/add'
+    'REMOTE_PORT' => '61911'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/question/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524625947.2216
+    'REQUEST_TIME' => 1524625947
+]
+2018-04-25 11:13:30 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\question\add.php:11
+Stack trace:
+#0 G:\class\problem\backend\views\question\add.php(11): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 11, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\QuestionController))
+#4 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('add', Array, Object(backend\controllers\QuestionController))
+#5 G:\class\problem\backend\controllers\QuestionController.php(145): yii\base\Controller->render('add', Array)
+#6 [internal function]: backend\controllers\QuestionController->actionAdd()
+#7 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('add', Array)
+#10 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('question/add', Array)
+#11 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-04-25 11:13:29 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2472'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/question/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/question/add'
+    'REMOTE_PORT' => '61926'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/question/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524626009.062
+    'REQUEST_TIME' => 1524626009
+]
+2018-04-25 11:13:38 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\question\add.php:11
+Stack trace:
+#0 G:\class\problem\backend\views\question\add.php(11): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 11, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\QuestionController))
+#4 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('add', Array, Object(backend\controllers\QuestionController))
+#5 G:\class\problem\backend\controllers\QuestionController.php(145): yii\base\Controller->render('add', Array)
+#6 [internal function]: backend\controllers\QuestionController->actionAdd()
+#7 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('add', Array)
+#10 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('question/add', Array)
+#11 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-04-25 11:13:37 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2472'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/question/add'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/question/add'
+    'REMOTE_PORT' => '61931'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/question/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524626017.2396
+    'REQUEST_TIME' => 1524626017
+]
+2018-04-25 11:14:02 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\role\create.php:11
+Stack trace:
+#0 G:\class\problem\backend\views\role\create.php(11): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 11, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\RoleController))
+#4 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\RoleController))
+#5 G:\class\problem\backend\controllers\RoleController.php(25): yii\base\Controller->render('create')
+#6 [internal function]: backend\controllers\RoleController->actionCreate()
+#7 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#10 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('role/create', Array)
+#11 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-04-25 11:14:01 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2472'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/role/create'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/role/create'
+    'REMOTE_PORT' => '61951'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/role/index'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524626041.4938
+    'REQUEST_TIME' => 1524626041
+]
+2018-04-25 11:15:08 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\site\signup.php:14
+Stack trace:
+#0 G:\class\problem\backend\views\site\signup.php(14): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 14, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\SiteController))
+#4 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('signup', Array, Object(backend\controllers\SiteController))
+#5 G:\class\problem\backend\controllers\SiteController.php(111): yii\base\Controller->render('signup', Array)
+#6 [internal function]: backend\controllers\SiteController->actionSignup()
+#7 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#10 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#11 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-04-25 11:15:07 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2472'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/site/signup'
+    'REMOTE_PORT' => '62059'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/role/create'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524626107.6982
+    'REQUEST_TIME' => 1524626107
+]
+2018-04-25 11:15:55 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\site\signup.php:14
+Stack trace:
+#0 G:\class\problem\backend\views\site\signup.php(14): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 14, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\SiteController))
+#4 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('signup', Array, Object(backend\controllers\SiteController))
+#5 G:\class\problem\backend\controllers\SiteController.php(111): yii\base\Controller->render('signup', Array)
+#6 [internal function]: backend\controllers\SiteController->actionSignup()
+#7 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#10 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#11 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-04-25 11:15:53 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2472'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/site/signup'
+    'REMOTE_PORT' => '62071'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/role/create'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524626153.9417
+    'REQUEST_TIME' => 1524626153
+]
+2018-04-25 11:16:18 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\site\signup.php:14
+Stack trace:
+#0 G:\class\problem\backend\views\site\signup.php(14): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 14, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\SiteController))
+#4 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('signup', Array, Object(backend\controllers\SiteController))
+#5 G:\class\problem\backend\controllers\SiteController.php(111): yii\base\Controller->render('signup', Array)
+#6 [internal function]: backend\controllers\SiteController->actionSignup()
+#7 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#10 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#11 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-04-25 11:16:17 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2588'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/site/signup'
+    'REMOTE_PORT' => '62089'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/role/create'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524626177.1253
+    'REQUEST_TIME' => 1524626177
+]
+2018-04-25 11:16:36 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\site\signup.php:14
+Stack trace:
+#0 G:\class\problem\backend\views\site\signup.php(14): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 14, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\SiteController))
+#4 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('signup', Array, Object(backend\controllers\SiteController))
+#5 G:\class\problem\backend\controllers\SiteController.php(111): yii\base\Controller->render('signup', Array)
+#6 [internal function]: backend\controllers\SiteController->actionSignup()
+#7 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#10 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#11 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-04-25 11:16:35 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2588'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/site/signup'
+    'REMOTE_PORT' => '62107'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/role/create'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524626195.6277
+    'REQUEST_TIME' => 1524626195
+]
+2018-04-25 11:16:55 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: username in G:\class\problem\backend\views\site\signup.php:14
+Stack trace:
+#0 G:\class\problem\backend\views\site\signup.php(14): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'G:\\class\\proble...', 14, Array)
+#1 G:\class\problem\vendor\yiisoft\yii2\base\View.php(336): require('G:\\class\\proble...')
+#2 G:\class\problem\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('G:\\class\\proble...', Array)
+#3 G:\class\problem\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('G:\\class\\proble...', Array, Object(backend\controllers\SiteController))
+#4 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('signup', Array, Object(backend\controllers\SiteController))
+#5 G:\class\problem\backend\controllers\SiteController.php(111): yii\base\Controller->render('signup', Array)
+#6 [internal function]: backend\controllers\SiteController->actionSignup()
+#7 G:\class\problem\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 G:\class\problem\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 G:\class\problem\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#10 G:\class\problem\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#11 G:\class\problem\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 G:\class\problem\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2018-04-25 11:16:54 [127.0.0.1][1][4pr9gruesvnnss3e966ddlio75][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '4pr9gruesvnnss3e966ddlio75'
+    '_identity-backend' => '7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a:2:{i:0;s:17:\"_identity-backend\";i:1;s:24:\"[\"1\",\"\\u0016L(\",2592000]\";}'
+    '_csrf-backend' => '50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"6u_WH6XNzb6md88Z3h9YesnyeoFHBtKr\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'userId' => '1'
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;F:\\phpStudy\\PHPTutorial\\MySQL\\bin;F:\\phpStudy\\PHPTutorial\\php\\php-7.0.12-nts;F:\\Program Files\\Git\\cmd;F:\\composer;C:\\Users\\F6\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\F6\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'F:/phpStudy/PHPTutorial/php/php-7.0.12-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2588'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/site/signup'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/site/signup'
+    'REMOTE_PORT' => '62121'
+    'SCRIPT_FILENAME' => 'G:/class/problem/backend/web/index.php'
+    'SERVER_ADMIN' => '17736230247@163.com'
+    'CONTEXT_DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'G:/class/problem/backend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.problem.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-backend=4pr9gruesvnnss3e966ddlio75; _identity-backend=7ae665500ccec84e24ff0d5d50cfd19dd56e420763b7b7000a9a8fe748fae8e1a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A24%3A%22%5B%221%22%2C%22%5Cu0016L%28%22%2C2592000%5D%22%3B%7D; _csrf-backend=50bb3d1d44d3cb0b2acac817474e264a16b369e72d40c284e6e15f9302bcdf25a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%226u_WH6XNzb6md88Z3h9YesnyeoFHBtKr%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.problem.com/role/create'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.problem.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1524626214.8683
+    'REQUEST_TIME' => 1524626214
+]

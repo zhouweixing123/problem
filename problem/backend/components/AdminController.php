@@ -9,6 +9,7 @@
 namespace backend\components;
 
 
+use backend\models\User;
 use yii\web\Controller;
 use yii\web\Cookie;
 use yii\web\UnauthorizedHttpException;
@@ -17,6 +18,7 @@ class AdminController extends Controller
     protected $session;
     protected $cookie;
     protected $auth;
+    protected $username;
 
     public function beforeAction($action)
     {
@@ -29,11 +31,12 @@ class AdminController extends Controller
         $action = \Yii::$app -> controller -> action -> id;
         $permissionName = $controller . "/" . $action;
         if (\Yii::$app -> user -> isGuest && $permissionName != 'site/login'){
-//            echo $userId;die;
             echo "<script>alert('您还未登录,请先登录');</script>";
             return $this -> redirect('/site/login');
         }
-
+        $userId = \Yii::$app -> user ->id;
+        $username = User::getNameById($userId) -> toArray();
+        $this -> username = $username['username'];
         $item_name = \Yii::$app -> authManager ->getPermissionsByUser($userId);
         $names = [];
         foreach ($item_name as $v){
@@ -46,8 +49,6 @@ class AdminController extends Controller
             return true;
         }
         if (!\Yii::$app -> user -> can($permissionName) && \Yii::$app -> getErrorHandler() -> exception === null){
-            /*\Yii::$app->getSession()->setFlash('error', '您暂无此权限,请联系管理员!!!');
-            return $this -> redirect('/site/index');*/
             echo "<script>alert('您无此权限,请联系管理员');window.location.href='".\Yii::$app -> urlManager -> createAbsoluteUrl('site/index')."'</script>";
             return $this -> returnJump('您无此权限,请联系管理员','/site/index');
         }

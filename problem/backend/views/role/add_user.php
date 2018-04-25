@@ -16,7 +16,7 @@ AppAsset::addJs($this,'js/jquery.basictable.min.js');
 AppAsset::addJs($this,'js/table.js');
 
 ?>
-<?= $this->render('//layouts/header');?>
+<?= $this->render('//layouts/header',['username' => $username]);?>
         <div class="grid-form">
             <div class="grid-form1">
                 <h3>添加用户到角色</h3>

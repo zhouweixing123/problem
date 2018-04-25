@@ -4,6 +4,7 @@ namespace backend\controllers;
 
 use backend\components\AdminController;
 use backend\models\Question;
+use backend\models\User;
 use Yii;
 use common\models\LoginForm;
 use backend\models\form\SignupForm;
@@ -36,6 +37,7 @@ class SiteController extends AdminController
     {
         $model = new Question();
         if (\Yii::$app->getRequest()->getIsGet()) {
+            // 获取用户名称
             // 获取用户人数
             $count = (new Query())->from('user')->count();
             $questionCount = (new Query())->from('question')->where(['isDel' => 0, 'status' => 1])->count();
@@ -54,7 +56,7 @@ class SiteController extends AdminController
                 ->asArray()
                 ->all();
         }
-        return $this->render('index', ['count' => $count, 'questionCount' => $questionCount, 'questionInfo' => $questionInfo, 'pages' => $page]);
+        return $this->render('index', ['count' => $count, 'questionCount' => $questionCount, 'questionInfo' => $questionInfo, 'pages' => $page,'username' => $this -> username]);
     }
 
     /**
@@ -84,6 +86,7 @@ class SiteController extends AdminController
     public function actionLogout()
     {
         \Yii::$app->user->logout(false);
+        $this -> session -> remove("username");
         return $this->goHome();
     }
 
@@ -99,13 +102,13 @@ class SiteController extends AdminController
         // $model->signup() 方法, 是我们要实现的具体的添加用户操作
         if ($model->load(\Yii::$app->request->post()) && $model->signup()) {
             // 添加完用户之后，我们跳回到index操作即列表页
-            return $this->redirect(['index']);
+            return $this->redirect('index');
         }
 
         // 下面这一段是我们刚刚分析的第一个小问题的实现
         // 渲染添加新用户的表单
         return $this->render('signup', [
-            'model' => $model,
+            'model' => $model,'username' => $this -> username
         ]);
     }
 
@@ -116,6 +119,6 @@ class SiteController extends AdminController
     {
         $id = Yii::$app->getRequest()->get('id', '');
         $question = (new Query())->select(['questionName', 'questionAnswer'])->from('question')->where(['question_id' => $id])->one();
-        return $this->render('info', ['data' => $question]);
+        return $this->render('info', ['data' => $question,'username' => $this -> username]);
     }
 }

@@ -61,7 +61,7 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                '/' =>'site/login'
+                '/' =>'site/index'
             ],
         ],
         'authManager' => [

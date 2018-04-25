@@ -19,7 +19,7 @@ class PowerController extends AdminController
      * */
     public function actionIndex(){
         $data = $this -> auth -> getPermissions();
-        return $this -> render('index',['data' => $data]);
+        return $this -> render('index',['data' => $data,"username" => $this -> username]);
     }
 
     /*
@@ -27,12 +27,12 @@ class PowerController extends AdminController
      * */
     public function actionCreate(){
         if (\Yii::$app -> getRequest() -> getIsGet()){
-            return $this -> render('create');
+            return $this -> render('create',['username' => $this -> username]);
         }
         $name = \Yii::$app -> getRequest() -> post('name','');
         if ($name === ''){
             \Yii::$app->getSession()->setFlash('error', '请添加权限名称');
-            return $this -> render('create');
+            return $this -> render('create',['username' => $this -> username]);
         }
         $createPost = $this -> auth -> createPermission($name);
         $createPost -> description = "创建了{$name}权限";
@@ -43,7 +43,7 @@ class PowerController extends AdminController
             return $this -> redirect(['index']);
         }else{
             \Yii::$app->getSession()->setFlash('error', '权限添加失败');
-            return $this -> render('create');
+            return $this -> render('create',['username' => $this -> username]);
         }
     }
 
@@ -68,7 +68,7 @@ class PowerController extends AdminController
         $name = \Yii::$app -> getRequest() -> get('name','');
         $permission = $this -> auth -> getPermission($name);
         if (\Yii::$app -> getRequest() -> getIsGet()){
-            return $this -> render('update',['data' => $permission]);
+            return $this -> render('update',['data' => $permission,'username' => $this -> username]);
         }
         if (\Yii::$app -> getRequest() -> getIsPost()){
             $newName = \Yii::$app -> getRequest() -> post('name','');

@@ -186,4 +186,11 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     public function removePasswordResetToken(){
         $this -> password_reset_token = null;
     }
+
+    /*
+     *  通过用户ID获取用户名称
+     * */
+    public static function getNameById($id){
+        return static::find() -> select('username') -> where(['id' => $id]) -> one();
+    }
 }

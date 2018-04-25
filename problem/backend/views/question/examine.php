@@ -14,7 +14,7 @@ AppAsset::addJs($this,'js/jquery.basictable.min.js');
 AppAsset::addJs($this,'js/table.js');
 AppAsset::addJs($this,'js/question.js');
 ?>
-<?= $this->render('//layouts/header');?>
+<?= $this->render('//layouts/header',['username' => $username]);?>
 <div class="agile-grids">
     <!-- tables -->
     <input type="hidden" id="url" data-url="<?=Yii::$app -> urlManager -> createUrl(['question/index'])?>">

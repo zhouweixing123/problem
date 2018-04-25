@@ -66,7 +66,7 @@ class QuestionController extends AdminController
                 ->asArray()
                 ->all();
         }
-        return $this -> render('index',['questionInfo' => $questionInfo,'model' => $model,'pages' => $page]);
+        return $this -> render('index',['questionInfo' => $questionInfo,'model' => $model,'pages' => $page,'username' => $this -> username]);
     }
 
     /*
@@ -92,7 +92,7 @@ class QuestionController extends AdminController
                 ->asArray()
                 ->all();
         }
-        return $this -> render('examine',['questionInfo' => $questionInfo,'model' => $model,'pages' => $page]);
+        return $this -> render('examine',['questionInfo' => $questionInfo,'model' => $model,'pages' => $page,'username' => $this -> username]);
     }
 
     /*
@@ -142,7 +142,7 @@ class QuestionController extends AdminController
     public function actionAdd(){
         $model = new Question();
         if (\Yii::$app -> getRequest() -> getIsGet()){
-            return $this -> render('add',['model' => $model]);
+            return $this -> render('add',['model' => $model,'username' => $this -> username]);
         }
         if (\Yii::$app -> getRequest() -> getIsPost()){
             $questionName = \Yii::$app -> getRequest() -> post('name','');

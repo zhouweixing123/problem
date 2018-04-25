@@ -18,7 +18,7 @@ class ChildController extends AdminController
     public function actionIndex(){
         $name = \Yii::$app -> getRequest() -> get('name','');
         $data = $this -> getRoleUser($name);
-        return $this -> render('index',['data' => $data]);
+        return $this -> render('index',['data' => $data,['username' => $this -> username]]);
     }
 
     protected function getRoleUser($name){

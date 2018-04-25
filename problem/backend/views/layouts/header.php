@@ -170,11 +170,11 @@ use yii\widgets\Breadcrumbs;
                 <ul>
                     <li class="dropdown profile_details_drop">
                         <a href="#" class="dropdown-toggle a_008DE7" data-toggle="dropdown" aria-expanded="false">
-                            <div class="profile_img">
-                                <span class="prfil-img"><img src="<?= Yii::$app -> homeUrl?>images/in4.jpg" alt=""> </span>
+                            <div class="profile_img" style="margin-left: -10px;">
+                                <span class="prfil-img"><img src="<?= Yii::$app -> homeUrl?>images/in4.jpg" style="width:40px;height:40px;" alt=""> </span>
                                 <div class="user-name">
-                                    <p>Malorum</p>
-                                    <span>Administrator</span>
+                                    <p><?=$username?></p>
+                                    <span><?=date('Y-m-d h:i:s',time())?></span>
                                 </div>
                                 <i class="fa fa-angle-down"></i>
                                 <i class="fa fa-angle-up"></i>

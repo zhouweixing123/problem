@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 $this -> title = "问题管理";
@@ -8,7 +8,7 @@ $this->params['breadcrumbs'][] = [
 ];
 $this -> params['breadcrumbs'][] = "添加问题";
 ?>
-<?= $this->render('//layouts/header');?>
+<?= $this->render('//layouts/header',['username' => $username]);?>
 <div class="main-wthree c_g_border">
     <div class="container">
         <div class="sin-w3-agile">

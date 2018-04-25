@@ -12,7 +12,7 @@ AppAsset::addJs($this,'js/jquery.basictable.min.js');
 AppAsset::addJs($this,'js/table.js');
 AppAsset::addJs($this,'js/question.js');
 ?>
-<?= $this->render('//layouts/header');?>
+<?= $this->render('//layouts/header',['username' => $username]);?>
 <!--four-grids here-->
 <div class="four-grids">
     <div class="col-md-3 four-grid">
