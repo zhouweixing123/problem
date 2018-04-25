@@ -11,6 +11,7 @@ AppAsset::addCss($this,'css/basictable.css');
 AppAsset::addJs($this,'js/jquery.basictable.min.js');
 AppAsset::addJs($this,'js/table.js');
 AppAsset::addJs($this,'js/question.js');
+$this -> params['breadcrumbs'][] = "首页";
 ?>
 <?= $this->render('//layouts/header',['username' => $username]);?>
 <!--four-grids here-->
