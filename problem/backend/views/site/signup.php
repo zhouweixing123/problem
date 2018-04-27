@@ -20,17 +20,17 @@ $this->params['breadcrumbs'][] = "添加";
         <!-- 用户名 -->
         <div class="form-group">
             <label for="exampleInputEmail1">用户名</label>
-            <?= $form->field($model, 'username')->label(false)->textInput(['class' => 'form-control', 'placeholder' => '请输入2-10位的用户名...', 'id' => 'focusedinput']) ?>
+            <?= $form->field($usermodel, 'username')->label(false)->textInput(['class' => 'form-control', 'placeholder' => '请输入2-10位的用户名...', 'id' => 'focusedinput']) ?>
         </div>
         <!-- 邮箱 -->
         <div class="form-group">
             <label for="exampleInputEmail1">邮箱</label>
-            <?= $form->field($model, 'email')->label(false)->textInput(['class' => 'form-control', 'id' => 'exampleInputEmail1', 'placeholder' => '请输入邮箱...']) ?>
+            <?= $form->field($usermodel, 'email')->label(false)->textInput(['class' => 'form-control', 'id' => 'exampleInputEmail1', 'placeholder' => '请输入邮箱...']) ?>
         </div>
         <!-- 密码 -->
         <div class="form-group">
             <label for="exampleInputPassword1">密码</label>
-            <?= $form->field($model, 'password')->label(false)->passwordInput(array('class' => 'form-control', 'id' => 'exampleInputPassword1', 'placeholder' => '请输入6-8位密码....')) ?>
+            <?= $form->field($usermodel, 'password')->label(false)->passwordInput(array('class' => 'form-control', 'id' => 'exampleInputPassword1', 'placeholder' => '请输入6-8位密码....')) ?>
         </div>
 
         <!-- 记住我 -->

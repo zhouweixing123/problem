@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = [
 ];
 $this -> params['breadcrumbs'][] = "问题详情";
 ?>
-<?= $this->render('//layouts/header',['username' => $username]);?>
+<?= $this->render('//layouts/header',['username' => $username,'model' => $model]);?>
 <div class="agile3-grids">
     <!-- grids -->
     <div class="grids">

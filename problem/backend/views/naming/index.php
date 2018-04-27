@@ -13,7 +13,7 @@ AppAsset::addJs($this,'js/table.js');
 AppAsset::addJs($this,'js/naming.js');
 
 ?>
-<?= $this->render('//layouts/header',['username' => $username]);?>
+<?= $this->render('//layouts/header',['username' => $username,'model' => $model]);?>
 <div class="agile-grids">
     <!-- tables -->
 

@@ -1,14 +1,14 @@
 <?php
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
-$this -> title = "角色管理";
+$this -> title = "修改角色";
 $this->params['breadcrumbs'][] = [
     'label' => '角色列表',
     'url' => \yii\helpers\Url::to(['role/index'])
 ];
 $this -> params['breadcrumbs'][] = "修改角色";
 ?>
-<?= $this->render('//layouts/header',['username' => $username]);?>
+<?= $this->render('//layouts/header',['username' => $usernamei,'model' => $model]);?>
 <div class="main-wthree c_g_border">
     <div class="container">
         <div class="sin-w3-agile">

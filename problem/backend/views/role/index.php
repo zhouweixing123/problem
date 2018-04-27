@@ -12,11 +12,11 @@ AppAsset::addJs($this,'js/jquery.basictable.min.js');
 AppAsset::addJs($this,'js/table.js');
 
 ?>
-<?= $this->render('//layouts/header',['username' => $username]);?>
+<?= $this->render('//layouts/header',['username' => $username,'model' => $model]);?>
 <div class="panel-body mtn">
 
     <div class="bs-component mb20">
-        <a href="<?= Yii::$app -> urlManager -> createUrl('role/create')?>" class="btn btn-dark btn-block">角色添加</a>
+        <a href="<?= Yii::$app -> urlManager -> createUrl('role/create')?>" class="btn btn-dark">角色添加</a>
     </div>
 </div>
 <div class="agile-grids">

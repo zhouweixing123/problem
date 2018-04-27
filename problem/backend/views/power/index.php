@@ -13,7 +13,7 @@ AppAsset::addJs($this,'js/table.js');
 
 ?>
 
-<?= $this->render('//layouts/header',['username' => $username]);?>
+<?= $this->render('//layouts/header',['username' => $username,'model' => $model]);?>
 <div class="panel-body mtn">
 
     <div class="bs-component mb20">

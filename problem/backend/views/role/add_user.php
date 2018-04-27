@@ -3,7 +3,7 @@
 /* @var $this yii\web\View */
 use yii\helpers\Html;
 use \backend\assets\AppAsset;
-$this->title = '权限列表';
+$this->title = '添加用户角色';
 $this->params['breadcrumbs'][] = [
     'label' => '角色列表',
     'url' => \yii\helpers\Url::to(['role/index'])
@@ -16,7 +16,7 @@ AppAsset::addJs($this,'js/jquery.basictable.min.js');
 AppAsset::addJs($this,'js/table.js');
 
 ?>
-<?= $this->render('//layouts/header',['username' => $username]);?>
+<?= $this->render('//layouts/header',['username' => $username,'model' => $model]);?>
         <div class="grid-form">
             <div class="grid-form1">
                 <h3>添加用户到角色</h3>

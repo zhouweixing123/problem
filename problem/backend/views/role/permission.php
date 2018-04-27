@@ -16,10 +16,10 @@ AppAsset::addJs($this,'js/jquery.basictable.min.js');
 AppAsset::addJs($this,'js/table.js');
 
 ?>
-<?= $this->render('//layouts/header',['username' => $username]);?>
+<?= $this->render('//layouts/header',['username' => $username,'model' => $model]);?>
 <div class="grid-form">
     <div class="grid-form1">
-        <h3>添加用户到角色</h3>
+        <h3>添加权限到角色</h3>
         <div class="tab-content">
             <div class="tab-pane active" id="horizontal-form">
                 <form class="form-horizontal" action="" method="post">

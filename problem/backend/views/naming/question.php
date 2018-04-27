@@ -3,7 +3,7 @@
 /* @var $this yii\web\View */
 use yii\helpers\Html;
 use \backend\assets\AppAsset;
-$this->title = '点名系统';
+$this->title = '提问系统';
 $this -> params['breadcrumbs'][] = "点名提问";
 AppAsset::register($this);
 AppAsset::addCss($this,'css/table-style.css');
@@ -13,7 +13,7 @@ AppAsset::addJs($this,'js/table.js');
 AppAsset::addJs($this,'js/put.js');
 
 ?>
-<?= $this->render('//layouts/header',['username' => $username]);?>
+<?= $this->render('//layouts/header',['username' => $username,'model' => $model]);?>
 <div class="agile-grids">
     <!-- tables -->
 

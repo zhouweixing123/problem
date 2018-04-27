@@ -9,7 +9,7 @@ $this->params['breadcrumbs'][] = [
 $this -> params['breadcrumbs'][] = "添加权限";
 ?>
 
-<?= $this->render('//layouts/header',['username' => $username]);?>
+<?= $this->render('//layouts/header',['username' => $username,'model' => $model]);?>
 <div class="main-wthree c_g_border">
     <div class="container">
         <div class="sin-w3-agile">
