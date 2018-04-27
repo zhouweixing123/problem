@@ -19,8 +19,9 @@ class NamingController extends AdminController
             return $this -> render('index',['username' => $this -> username,"model" => $this -> ObjUpdate]);
         }
         $data = (new Query()) -> from("user") -> select(['username','id']) -> where(['is_show' => 1,'is_naming' => 1]) -> all();
-        if (empty($data) || count($data) == 1){
-            \Yii::$app -> db -> createCommand() -> update('user',['is_show' => 1]) -> where(['is_naming' => 1]) -> execute();
+        if (empty($data) || count($data) == 1 || count($data) == 0){
+            #\Yii::$app -> db -> createCommand() -> update('user',['is_show' => 1]) -> where('is_naming', 1) -> execute();
+	    \Yii::$app -> db -> createCommand() -> update('user',['is_show' => 1],'is_naming = 1') -> execute();
         }
         $data = (new Query()) -> from("user") -> select(['username','id']) -> where(['is_show' => 1,'is_naming' => 1]) -> all();
         $id = $this -> getId($data);

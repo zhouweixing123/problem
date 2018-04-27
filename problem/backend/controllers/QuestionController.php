@@ -192,8 +192,8 @@ class QuestionController extends AdminController
                     \Yii::$app -> session ->setFlash('修改成功！');
                     return $this->redirect('/question/index');
                 }else{
-                    echo "<script>alert('未修改值');</script>";
-                    return $this -> redirect('/question/index');
+		    echo "<script>alert('未修改值');</script>";
+		    return $this -> redirect('/question/index');
                 }
             } else {
                 return $this->redirect('/question/update&id='.$question_id);
