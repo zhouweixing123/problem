@@ -11,7 +11,7 @@ use yii\bootstrap\ActiveForm;
 
 $this->params['breadcrumbs'][] = "添加";
 ?>
-<?= $this->render('//layouts/header',['username' => $username]);?>
+<?= $this->render('//layouts/header',['username' => $username,"model" => $model]);?>
 
 <div class="grid-form">
     <div class="grid-form1">

@@ -3,6 +3,7 @@
 namespace backend\controllers;
 
 use backend\components\AdminController;
+use backend\models\form\UpdatePwdForm;
 use backend\models\Question;
 use backend\models\User;
 use Yii;
@@ -35,6 +36,7 @@ class SiteController extends AdminController
      */
     public function actionIndex()
     {
+        $uModel = new SignupForm();
         $model = new Question();
         if (\Yii::$app->getRequest()->getIsGet()) {
             // 获取用户名称
@@ -56,7 +58,7 @@ class SiteController extends AdminController
                 ->asArray()
                 ->all();
         }
-        return $this->render('index', ['count' => $count, 'questionCount' => $questionCount, 'questionInfo' => $questionInfo, 'pages' => $page,'username' => $this -> username]);
+        return $this->render('index', ['count' => $count, 'questionCount' => $questionCount, 'questionInfo' => $questionInfo, 'pages' => $page,'username' => $this -> username,"model" => $this -> ObjUpdate]);
     }
 
     /**
@@ -108,8 +110,36 @@ class SiteController extends AdminController
         // 下面这一段是我们刚刚分析的第一个小问题的实现
         // 渲染添加新用户的表单
         return $this->render('signup', [
-            'model' => $model,'username' => $this -> username
+            'usermodel' => $model,'username' => $this -> username,"model" => $this -> ObjUpdate
         ]);
+    }
+
+    /*
+     *  密码修改
+     * */
+    public function actionUpdatePwd(){
+        if (Yii::$app -> getRequest() -> getIsPost()){
+            $model = new UpdatePwdForm();
+            $data = [];
+            $model -> OldPassword = Yii::$app -> getRequest() -> post("old",'');
+            $model -> NewPassword = Yii::$app -> getRequest() -> post('new','');
+            $model -> OkPassword = Yii::$app -> getRequest() -> post('ok','');
+            $bol = $model -> UpdatePwd();
+            if ($bol === 200){
+                $data['msg'] = "修改成功";
+                $data['code'] = 1;
+            }else if ($bol === 300){
+                $data['msg'] = "修改失败";
+                $data['code'] = 0;
+            }else if ($bol === 400){
+                $data['msg'] = "原始密码不正确";
+                $data['code'] = 0;
+            }else if ($bol === 500){
+                $data['msg'] = "两次输入的密码不一致,请重新输入";
+                $data['code'] = 0;
+            }
+            return $this -> asJson($data);
+        }
     }
 
     /*
@@ -119,6 +149,6 @@ class SiteController extends AdminController
     {
         $id = Yii::$app->getRequest()->get('id', '');
         $question = (new Query())->select(['questionName', 'questionAnswer'])->from('question')->where(['question_id' => $id])->one();
-        return $this->render('info', ['data' => $question,'username' => $this -> username]);
+        return $this->render('info', ['data' => $question,'username' => $this -> username,"model" => $this -> ObjUpdate]);
     }
 }

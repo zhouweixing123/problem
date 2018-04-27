@@ -17,12 +17,12 @@ class RoleController extends AdminController
 {
     public function actionIndex(){
         $data = $this -> auth -> getRoles();
-        return $this -> render('index',['data' => $data,'username' => $this -> username]);
+        return $this -> render('index',['data' => $data,'username' => $this -> username,"model" => $this -> ObjUpdate]);
     }
 
     public function actionCreate(){
         if (\Yii::$app -> getRequest() -> getIsGet()){
-            return $this -> render('create',['username' => $this -> username]);
+            return $this -> render('create',['username' => $this -> username,"model" => $this -> ObjUpdate]);
         }
         if (\Yii::$app -> getRequest() -> getIsPost()) {
             $name = \Yii::$app->getRequest()->post('name','');
@@ -63,7 +63,7 @@ class RoleController extends AdminController
         $role = $this -> auth -> getRole($name);
         if (\Yii::$app -> getRequest() -> getIsGet()){
             $data = $this -> auth -> getRole($name);
-            return $this -> render('update',['data' => $data,"username" => $this -> username]);
+            return $this -> render('update',['data' => $data,"username" => $this -> username,"model" => $this -> ObjUpdate]);
         }
         if (\Yii::$app -> getRequest() -> getIsPost()){
             $newName = \Yii::$app -> getRequest() -> post('name','');
@@ -116,7 +116,7 @@ class RoleController extends AdminController
         $users = User::find() -> all();
         return $this -> render(
             'add_user',
-            ['users' => $users,'role' => $role,'roleUser' => $roleUser,'error' => $error,'username' => $this -> username]
+            ['users' => $users,'role' => $role,'roleUser' => $roleUser,'error' => $error,'username' => $this -> username,"model" => $this -> ObjUpdate]
         );
     }
 
@@ -147,6 +147,6 @@ class RoleController extends AdminController
         }
         $permissions = $this -> auth -> getPermissions();
         $rolePermissions = $this -> auth -> getPermissionsByRole($name);  // 获取角色对应权限列表
-        return $this -> render('permission',['permissions' => $permissions,'rolePermissions' => array_keys($rolePermissions),'username' => $this -> username]);
+        return $this -> render('permission',['permissions' => $permissions,'rolePermissions' => array_keys($rolePermissions),'username' => $this -> username,"model" => $this -> ObjUpdate]);
     }
 }

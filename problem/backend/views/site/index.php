@@ -13,7 +13,7 @@ AppAsset::addJs($this,'js/table.js');
 AppAsset::addJs($this,'js/question.js');
 $this -> params['breadcrumbs'][] = "首页";
 ?>
-<?= $this->render('//layouts/header',['username' => $username]);?>
+<?= $this->render('//layouts/header',['username' => $username,"model" => $model]);?>
 <!--four-grids here-->
 <div class="four-grids">
     <div class="col-md-3 four-grid">

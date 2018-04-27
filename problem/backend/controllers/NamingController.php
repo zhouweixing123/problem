@@ -16,7 +16,7 @@ class NamingController extends AdminController
 {
     public function actionIndex(){
         if (\Yii::$app -> getRequest() -> getIsGet()){
-            return $this -> render('index',['username' => $this -> username]);
+            return $this -> render('index',['username' => $this -> username,"model" => $this -> ObjUpdate]);
         }
         $data = (new Query()) -> from("user") -> select(['username','id']) -> where(['is_show' => 1,'is_naming' => 1]) -> all();
         if (empty($data) || count($data) == 1){
@@ -69,7 +69,7 @@ class NamingController extends AdminController
      * */
     public function actionQuestion(){
         if (\Yii::$app -> getRequest() -> getIsGet()){
-            return $this -> render('question',['username' => $this -> username]);
+            return $this -> render('question',['username' => $this -> username,"model" => $this -> ObjUpdate]);
         }
         // 获取所有的用户
         $data = (new Query()) -> from("user") -> select(['username','id']) -> where(['is_naming' => 1]) -> all();

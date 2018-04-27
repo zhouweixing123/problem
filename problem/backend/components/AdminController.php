@@ -9,6 +9,7 @@
 namespace backend\components;
 
 
+use backend\models\form\UpdatePwdForm;
 use backend\models\User;
 use yii\web\Controller;
 use yii\web\Cookie;
@@ -19,6 +20,7 @@ class AdminController extends Controller
     protected $cookie;
     protected $auth;
     protected $username;
+    protected $ObjUpdate;
 
     public function beforeAction($action)
     {
@@ -59,6 +61,7 @@ class AdminController extends Controller
         $this -> session = \Yii::$app -> session;
         $this -> cookie = new Cookie();
         $this -> auth = \Yii::$app -> authManager;
+        $this -> ObjUpdate = new UpdatePwdForm();
     }
     protected function returnJump($message,$url = ""){
         if ($url === ""){

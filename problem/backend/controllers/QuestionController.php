@@ -66,7 +66,7 @@ class QuestionController extends AdminController
                 ->asArray()
                 ->all();
         }
-        return $this -> render('index',['questionInfo' => $questionInfo,'model' => $model,'pages' => $page,'username' => $this -> username]);
+        return $this -> render('index',['questionInfo' => $questionInfo,'model' => $model,'pages' => $page,'username' => $this -> username,"model" => $this -> ObjUpdate]);
     }
 
     /*
@@ -92,7 +92,7 @@ class QuestionController extends AdminController
                 ->asArray()
                 ->all();
         }
-        return $this -> render('examine',['questionInfo' => $questionInfo,'model' => $model,'pages' => $page,'username' => $this -> username]);
+        return $this -> render('examine',['questionInfo' => $questionInfo,'model' => $model,'pages' => $page,'username' => $this -> username,"model" => $this -> ObjUpdate]);
     }
 
     /*
@@ -142,7 +142,7 @@ class QuestionController extends AdminController
     public function actionAdd(){
         $model = new Question();
         if (\Yii::$app -> getRequest() -> getIsGet()){
-            return $this -> render('add',['model' => $model,'username' => $this -> username]);
+            return $this -> render('add',['model' => $model,'username' => $this -> username,"model" => $this -> ObjUpdate]);
         }
         if (\Yii::$app -> getRequest() -> getIsPost()){
             $questionName = \Yii::$app -> getRequest() -> post('name','');
@@ -174,7 +174,7 @@ class QuestionController extends AdminController
             ->asArray()
             ->one();
         if (\Yii::$app -> getRequest() -> getIsGet()){
-            return $this -> render('update',['data' => $questionInfo,'username' => $this -> username]);
+            return $this -> render('update',['data' => $questionInfo,'username' => $this -> username,"model" => $this -> ObjUpdate]);
         }
 
         if (\Yii::$app->getRequest()->getIsPost()){

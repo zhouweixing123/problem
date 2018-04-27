@@ -6,6 +6,10 @@
  * Time: 1:06
  */
 use yii\widgets\Breadcrumbs;
+use yii\widgets\ActiveForm;
+use yii\bootstrap\Html;
+\backend\assets\AppAsset::addJs($this,"js/pwd.up.js");
+\backend\assets\AppAsset::addCss($this,"css/zzc.css");
 ?>
 <div class="left-content">
     <div class="mother-grid-inner">
@@ -182,7 +186,7 @@ use yii\widgets\Breadcrumbs;
                             </div>
                         </a>
                         <ul class="dropdown-menu drp-mnu">
-                            <li> <a href="#" class="a_fff"><i class="fa fa-cog"></i> 个人中心</a></li>
+                            <li> <a href="javascript:void(0)" class="a_fff"><i class="fa fa-cog"></i> <span data-url="<?=Yii::$app -> urlManager -> createUrl(['site/pwd-up'])?>" id="pwd_up" data-id="<?=Yii::$app -> user -> id?>">修改密码</span></a></li>
                             <li> <a href="javascript:void(0)" class="a_fff" data-url="<?= Yii::$app -> urlManager -> createAbsoluteUrl('site/logout')?>" id="logout"><i class="fa fa-sign-out"></i> 退出登录</a></li>
                         </ul>
                     </li>
@@ -195,4 +199,37 @@ use yii\widgets\Breadcrumbs;
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
                 'class' => 'breadcrumb-item a_fff',
             ]) ?>
+        </div>
+        <div class="content_div">
+            <div class="grid-form pwd_div">
+                <div class="grid-form1">
+                    <h2 id="forms-example" class="">密码修改</h2>
+                    <?php $form = ActiveForm::begin(); ?>
+                    <!-- 用户名 -->
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">原密码</label>
+                        <?= $form->field($model, 'OldPassword')->label(false)->textInput(['class' => 'form-control', 'placeholder' => '请输入您的原密码...', 'id' => 'focusedinput']) ?>
+                    </div>
+                    <!-- 邮箱 -->
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">新密码</label>
+                        <?= $form->field($model, 'NewPassword')->label(false)->textInput(['class' => 'form-control', 'id' => 'exampleInputEmail1', 'placeholder' => '请输入您的新密码...']) ?>
+                    </div>
+                    <!-- 密码 -->
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">确认密码</label>
+                        <?= $form->field($model, 'OkPassword')->label(false)->passwordInput(array('class' => 'form-control', 'id' => 'exampleInputPassword1', 'placeholder' => '请确认您输入的密码....')) ?>
+                    </div>
+
+                    <!-- 记住我 -->
+                    <!--<div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Check me out
+                        </label>
+                    </div>-->
+                    <?= Html::button('修改密码', ['class' => 'btn btn-default', 'name' => 'signup-button','id' => 'update_pwd','data-url'=>Yii::$app -> urlManager -> createUrl(['site/update-pwd']),'data-id' => Yii::$app -> user -> id]) ?>
+                    <?= Html::button('取消修改', ['class' => 'btn btn-default', 'name' => 'signup-button','id' => 'cancel']) ?>
+                    <?php ActiveForm::end(); ?>
+                </div>
+            </div>
         </div>
